@@ -134,6 +134,22 @@ html {
   font-family: "Work Sans", sans-serif;
 }
 
+h3 {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+h5 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -575,4 +591,158 @@ body #browse {
   align-items: center;
   padding: 80px 195px;
   gap: 60px;
+  color: #ffffff;
+}
+body #browse .header h3 {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 120%;
+  text-transform: capitalize;
+}
+body #browse .categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+body #browse .categories .category {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 240px;
+  height: 316px;
+  background: #3b3b3b;
+  border-radius: 20px;
+}
+body #browse .categories .category img {
+  border-radius: 20px 20px 0px 0px;
+}
+body #browse .categories .category .text {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px 25px;
+  gap: 25px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  text-transform: capitalize;
+  width: 240px;
+  height: 76px;
+}
+body #discoverMore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 195px;
+  gap: 60px;
+}
+body #discoverMore .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 100px;
+}
+body #discoverMore .header .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body #discoverMore .header .text p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+body #discoverMore .header button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  gap: 12px;
+  background-color: #2b2b2b;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+  transition: 0.3s;
+  border: 2px solid transparent;
+  border-color: #a259ff;
+  height: 60px;
+  padding: 20px 50px !important;
+}
+body #discoverMore .header button:hover {
+  transform: scale(0.9);
+}
+body #discoverMore .discoverCards {
+  display: flex;
+  gap: 30px;
+}
+body #discoverMore .discoverCards .discoverCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 330px;
+  height: 469px;
+  background: #3b3b3b;
+  border-radius: 20px;
+}
+body #discoverMore .discoverCards .discoverCard .text {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px 25px;
+  gap: 25px;
+  align-items: flex-start;
+}
+body #discoverMore .discoverCards .discoverCard .text .top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  width: 270px;
+}
+body #discoverMore .discoverCards .discoverCard .text .top .info {
+  display: flex;
+  gap: 12px;
+}
+body #discoverMore .discoverCards .discoverCard .text .top .info p {
+  font-family: "Space Mono";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+}
+body #discoverMore .discoverCards .discoverCard .text .bottom {
+  display: flex;
+  width: 270px;
+}
+body #discoverMore .discoverCards .discoverCard .text .bottom p:first-child {
+  font-family: "Space Mono";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  color: #858584;
+}
+body #discoverMore .discoverCards .discoverCard .text .bottom p:last-child {
+  font-family: "Space Mono";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+}
+body #discoverMore .discoverCards .discoverCard .text .bottom .bottom_left {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 21px 0px 0px;
+  gap: 8px;
+  width: 135px;
+}
+body #discoverMore .discoverCards .discoverCard .text .bottom .bottom_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 8px;
+  width: 135px;
 }

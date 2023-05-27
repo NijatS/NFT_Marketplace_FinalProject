@@ -331,5 +331,133 @@ body {
     align-items: center;
     padding: 80px 195px;
     gap: 60px;
+    color: $white;
+    .header {
+      h3 {
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 120%;
+        text-transform: capitalize;
+      }
+    }
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      .category {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        width: 240px;
+        height: 316px;
+        background: $backgroundSecondary;
+        border-radius: 20px;
+        img {
+          border-radius: 20px 20px 0px 0px;
+        }
+        .text {
+          display: flex;
+          flex-direction: column;
+          padding: 20px 30px 25px;
+          gap: 25px;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 140%;
+          text-transform: capitalize;
+          width: 240px;
+          height: 76px;
+        }
+      }
+    }
+  }
+  #discoverMore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 195px;
+    gap: 60px;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 100px;
+      .text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        p {
+          @include bodyText();
+        }
+      }
+      button {
+        @include buttons($mainBackgroundColor);
+        border-color: $buttonBlue;
+        height: 60px;
+        padding: 20px 50px !important;
+      }
+    }
+    .discoverCards {
+      display: flex;
+      gap: 30px;
+      .discoverCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 330px;
+        height: 469px;
+        background: $backgroundSecondary;
+        border-radius: 20px;
+        .text {
+          display: flex;
+          flex-direction: column;
+          padding: 20px 30px 25px;
+          gap: 25px;
+          align-items: flex-start;
+          .top {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 5px;
+            width: 270px;
+            .info {
+              display: flex;
+              gap: 12px;
+              p {
+                @include bodyTextSpace();
+              }
+            }
+          }
+          .bottom {
+            display: flex;
+            width: 270px;
+            p {
+              &:first-child {
+                @include CaptionSpace();
+                color: $captionText;
+              }
+              &:last-child {
+                @include bodyTextSpace();
+              }
+            }
+            .bottom_left {
+              display: flex;
+              flex-direction: column;
+              padding: 0px 21px 0px 0px;
+              gap: 8px;
+              width: 135px;
+            }
+            .bottom_right {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: flex-end;
+              gap: 8px;
+              width: 135px;
+            }
+          }
+        }
+      }
+    }
   }
 }

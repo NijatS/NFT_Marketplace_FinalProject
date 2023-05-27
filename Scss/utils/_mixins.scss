@@ -10,10 +10,30 @@
   font-size: 16px;
   line-height: 140%;
   text-align: center;
-  color: #ffffff;
+  color: $white;
   transition: 0.3s;
   border: 2px solid transparent;
   &:hover {
     transform: scale(0.9);
   }
+}
+@mixin bodyText() {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  color: $white;
+  text-transform: capitalize;
+}
+@mixin bodyTextSpace() {
+  font-family: "Space Mono";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: $white;
+}
+@mixin CaptionSpace() {
+  font-family: "Space Mono";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
 }
