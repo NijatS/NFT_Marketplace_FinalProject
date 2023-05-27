@@ -57,6 +57,30 @@ nav {
     }
     #burgerIcon {
       display: none;
+      cursor: pointer;
     }
   }
+}
+@media screen and (max-width: 1050px) {
+  nav {
+    padding: 15px 50px;
+    .nav_menu {
+      a,
+      button {
+        display: none;
+      }
+      #burgerIcon {
+        display: block;
+      }
+    }
+  }
+}
+@media screen and (max-width: 690px) {
+  nav {
+    padding: 15px 30px;
+  }
+}
+@media screen and (max-width: 1050px) {
+}
+@media screen and (max-width: 690px) {
 }

@@ -67,6 +67,8 @@ const infoCards = [
     info: "Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.",
   },
 ];
+const mediaTablet = window.matchMedia("(max-width: 1050px)");
+const mediaPhone = window.matchMedia("(max-width: 690px)");
 cards.forEach((card) => {
   const imgDiv = card.querySelector(".img");
   const infoHead = card.querySelector(".info ");
@@ -84,6 +86,9 @@ cards.forEach((card) => {
 });
 j = 1;
 topAvatar.forEach((avatar) => {
+  if (mediaTablet.matches && j == 7) {
+    return;
+  }
   const div = document.createElement("div");
   div.className = "avatar";
   div.innerHTML = `<p class="number"><span>${j}</span></p><img src="..\\Images\\Avatars\\${avatar}.png" alt="">

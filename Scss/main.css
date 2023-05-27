@@ -150,6 +150,15 @@ h5 {
   color: #ffffff;
 }
 
+h1 {
+  font-weight: 600;
+  font-size: 67px;
+  line-height: 110%;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -223,10 +232,33 @@ nav .nav_menu button {
 nav .nav_menu button:hover {
   transform: scale(0.9);
 }
+@media screen and (max-width: 690px) {
+  nav .nav_menu button {
+    width: 315px;
+  }
+}
 nav .nav_menu #burgerIcon {
   display: none;
+  cursor: pointer;
 }
 
+@media screen and (max-width: 1050px) {
+  nav {
+    padding: 15px 50px;
+  }
+  nav .nav_menu a,
+  nav .nav_menu button {
+    display: none;
+  }
+  nav .nav_menu #burgerIcon {
+    display: block;
+  }
+}
+@media screen and (max-width: 690px) {
+  nav {
+    padding: 15px 30px;
+  }
+}
 footer {
   display: flex;
   flex-direction: column;
@@ -347,6 +379,11 @@ footer .footer_top > div:last-child .subscribeForm button {
 footer .footer_top > div:last-child .subscribeForm button:hover {
   transform: scale(0.9);
 }
+@media screen and (max-width: 690px) {
+  footer .footer_top > div:last-child .subscribeForm button {
+    width: 315px;
+  }
+}
 footer .footer_bottom {
   display: flex;
   flex-direction: column;
@@ -372,6 +409,16 @@ body {
 body .container {
   width: 1050px;
 }
+@media screen and (max-width: 1050px) {
+  body .container {
+    width: 690px;
+  }
+}
+@media screen and (max-width: 690px) {
+  body .container {
+    width: 315px;
+  }
+}
 body button {
   box-sizing: border-box;
 }
@@ -381,6 +428,16 @@ body #hero {
   align-items: center;
   padding: 80px 195px;
   gap: 30px;
+}
+@media screen and (max-width: 1050px) {
+  body #hero #hero {
+    padding: 80px 195px;
+  }
+}
+@media screen and (max-width: 690px) {
+  body #hero {
+    padding: 40px 0px;
+  }
 }
 body #hero .hero_container {
   display: flex;
@@ -393,14 +450,21 @@ body #hero .hero_container .left_side {
   height: 544px;
   color: #ffffff;
 }
+@media screen and (max-width: 1050px) {
+  body #hero .hero_container .left_side {
+    width: 330px;
+    height: 381px;
+  }
+}
 body #hero .hero_container .left_side h1 {
-  font-weight: 600;
-  font-size: 67px;
-  line-height: 110%;
-  display: flex;
-  align-items: center;
-  text-transform: capitalize;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 1050px) {
+  body #hero .hero_container .left_side h1 {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+  }
 }
 body #hero .hero_container .left_side p {
   font-style: normal;
@@ -408,6 +472,13 @@ body #hero .hero_container .left_side p {
   font-size: 22px;
   line-height: 160%;
   text-transform: capitalize;
+}
+@media screen and (max-width: 1050px) {
+  body #hero .hero_container .left_side p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
 }
 body #hero .hero_container .left_side button {
   display: flex;
@@ -430,6 +501,11 @@ body #hero .hero_container .left_side button {
 body #hero .hero_container .left_side button:hover {
   transform: scale(0.9);
 }
+@media screen and (max-width: 690px) {
+  body #hero .hero_container .left_side button {
+    width: 315px;
+  }
+}
 body #hero .hero_container .left_side .additional_info {
   display: flex;
   gap: 30px;
@@ -450,11 +526,23 @@ body #hero .hero_container .left_side .additional_info div span:first-child {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 1050px) {
+  body #hero .hero_container .left_side .additional_info div span:first-child {
+    font-size: 22px;
+    line-height: 160%;
+  }
+}
 body #hero .hero_container .left_side .additional_info div span:last-child {
   font-family: "Work Sans";
   font-weight: 400;
   font-size: 23.99px;
   line-height: 160%;
+}
+@media screen and (max-width: 1050px) {
+  body #hero .hero_container .left_side .additional_info div span:last-child {
+    font-size: 16px;
+    line-height: 140%;
+  }
 }
 body #hero .hero_container .right_side {
   display: flex;
@@ -463,8 +551,20 @@ body #hero .hero_container .right_side {
   width: 510px;
   height: 510px;
 }
+@media screen and (max-width: 1050px) {
+  body #hero .hero_container .right_side {
+    width: 330px;
+    height: 330px;
+  }
+}
 body #hero .hero_container .right_side img {
   border-radius: 20px 20px 0px 0px;
+}
+@media screen and (max-width: 1050px) {
+  body #hero .hero_container .right_side img {
+    width: 330px;
+    height: 221px;
+  }
 }
 body #hero .hero_container .right_side .info {
   display: flex;
@@ -477,6 +577,11 @@ body #hero .hero_container .right_side .info {
   width: 510px;
   height: 109px;
   color: #ffffff;
+}
+@media screen and (max-width: 1050px) {
+  body #hero .hero_container .right_side .info {
+    width: 330px;
+  }
 }
 body #hero .hero_container .right_side .info > p {
   font-weight: 600;
@@ -507,11 +612,27 @@ body #trending {
   gap: 60px;
   color: #ffffff;
 }
+@media screen and (max-width: 1050px) {
+  body #trending {
+    padding: 40px 0px;
+    gap: 40px;
+  }
+}
 body #trending .trending_headline {
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 1046px;
+}
+@media screen and (max-width: 1050px) {
+  body #trending .trending_headline {
+    width: 690px;
+  }
+}
+@media screen and (max-width: 690px) {
+  body #trending .trending_headline {
+    width: 315px;
+  }
 }
 body #trending .trending_headline p {
   text-transform: capitalize;
@@ -521,10 +642,22 @@ body #trending .trending_headline p:first-child {
   font-size: 38px;
   line-height: 120%;
 }
+@media screen and (max-width: 1050px) {
+  body #trending .trending_headline p:first-child {
+    font-size: 28px;
+    line-height: 140%;
+  }
+}
 body #trending .trending_headline p:last-child {
   font-weight: 400;
   font-size: 22px;
   line-height: 160%;
+}
+@media screen and (max-width: 1050px) {
+  body #trending .trending_headline p:last-child {
+    font-size: 16px;
+    line-height: 140%;
+  }
 }
 body #trending .cards {
   display: flex;
@@ -538,6 +671,11 @@ body #trending .cards .card {
   gap: 15px;
   width: 330px;
   height: 525px;
+}
+@media screen and (max-width: 1050px) {
+  body #trending .cards .card:last-child {
+    display: none;
+  }
 }
 body #trending .cards .card .img {
   display: flex;
@@ -601,6 +739,17 @@ body #top_creator {
   padding: 80px 195px;
   gap: 60px;
 }
+@media screen and (max-width: 1050px) {
+  body #top_creator {
+    padding: 40px 195px;
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 690px) {
+  body #top_creator {
+    padding: 0px;
+  }
+}
 body #top_creator .header {
   display: flex;
   align-items: flex-end;
@@ -615,15 +764,39 @@ body #top_creator .header .left {
   width: 703px;
   height: 91px;
 }
+@media screen and (max-width: 1050px) {
+  body #top_creator .header .left {
+    width: 343px;
+    height: 93px;
+  }
+}
+@media screen and (max-width: 690px) {
+  body #top_creator .header .left {
+    width: 315px;
+    height: 93px;
+  }
+}
 body #top_creator .header .left h3 {
   font-weight: 600;
   font-size: 38px;
   line-height: 120%;
 }
+@media screen and (max-width: 1050px) {
+  body #top_creator .header .left h3 {
+    font-size: 28px;
+    line-height: 140%;
+  }
+}
 body #top_creator .header .left p {
   font-weight: 400;
   font-size: 22px;
   line-height: 160%;
+}
+@media screen and (max-width: 1050px) {
+  body #top_creator .header .left p {
+    font-size: 16px;
+    line-height: 140%;
+  }
 }
 body #top_creator .header button {
   display: flex;
@@ -647,6 +820,16 @@ body #top_creator .header button {
 body #top_creator .header button:hover {
   transform: scale(0.9);
 }
+@media screen and (max-width: 690px) {
+  body #top_creator .header button {
+    width: 315px;
+  }
+}
+@media screen and (max-width: 690px) {
+  body #top_creator .header button {
+    display: none;
+  }
+}
 body #top_creator .avatars {
   display: flex;
   flex-wrap: wrap;
@@ -665,9 +848,35 @@ body #top_creator .avatars .avatar {
   border-radius: 20px;
   position: relative;
 }
+@media screen and (max-width: 1050px) {
+  body #top_creator .avatars .avatar {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 330px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 690px) {
+  body #top_creator .avatars .avatar {
+    width: 315px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 690px) {
+  body #top_creator .avatars .avatar:nth-child(6) {
+    display: none;
+  }
+}
 body #top_creator .avatars .avatar img {
   width: 110px;
   height: 120px;
+}
+@media screen and (max-width: 1050px) {
+  body #top_creator .avatars .avatar img {
+    width: 60px;
+    height: 60px;
+  }
 }
 body #top_creator .avatars .avatar .number {
   position: absolute;
@@ -686,6 +895,12 @@ body #top_creator .avatars .avatar .number {
   text-align: center;
   color: #858584;
 }
+@media screen and (max-width: 1050px) {
+  body #top_creator .avatars .avatar .number {
+    left: 12px;
+    top: 13px;
+  }
+}
 body #top_creator .avatars .avatar .number span {
   margin: auto;
 }
@@ -699,6 +914,17 @@ body #top_creator .avatars .avatar .text {
   height: 58px;
   color: #ffffff;
 }
+@media screen and (max-width: 1050px) {
+  body #top_creator .avatars .avatar .text {
+    align-items: flex-start;
+    width: 210px;
+  }
+}
+@media screen and (max-width: 690px) {
+  body #top_creator .avatars .avatar .text {
+    height: 58px;
+  }
+}
 body #top_creator .avatars .avatar .text h5 {
   font-weight: 600;
   font-size: 22px;
@@ -708,24 +934,75 @@ body #top_creator .avatars .avatar .text h5 {
 }
 body #top_creator .avatars .avatar .text div {
   display: flex;
-  justify-content: center;
   gap: 10px;
+  height: 22px;
+  width: 200px;
+}
+@media screen and (max-width: 1050px) {
+  body #top_creator .avatars .avatar .text div {
+    gap: 5px;
+    width: 210px;
+  }
+}
+@media screen and (max-width: 690px) {
+  body #top_creator .avatars .avatar .text div {
+    width: 195px;
+  }
+}
+body #top_creator .avatars .avatar .text div p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  width: 95px;
   height: 22px;
 }
 body #top_creator .avatars .avatar .text div p:first-child {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
   text-align: right;
   color: #858584;
 }
+@media screen and (max-width: 1050px) {
+  body #top_creator .avatars .avatar .text div p:first-child {
+    width: 102.5px;
+    height: 22px;
+    text-align: left;
+  }
+}
 body #top_creator .avatars .avatar .text div p:last-child {
   font-family: "Space Mono";
-  font-style: normal;
-  font-weight: 400;
+  color: #ffffff;
+}
+body #top_creator > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  gap: 12px;
+  background-color: #2b2b2b;
+  border-radius: 20px;
+  font-weight: 600;
   font-size: 16px;
   line-height: 140%;
+  text-align: center;
   color: #ffffff;
+  transition: 0.3s;
+  border: 2px solid transparent;
+  border-color: #a259ff;
+  height: 60px;
+  padding: 20px 50px !important;
+  display: none;
+}
+body #top_creator > button:hover {
+  transform: scale(0.9);
+}
+@media screen and (max-width: 690px) {
+  body #top_creator > button {
+    width: 315px;
+  }
+}
+@media screen and (max-width: 690px) {
+  body #top_creator > button {
+    display: flex;
+  }
 }
 body #browse {
   display: flex;
@@ -735,16 +1012,33 @@ body #browse {
   gap: 60px;
   color: #ffffff;
 }
+@media screen and (max-width: 1050px) {
+  body #browse {
+    padding: 40px 0px;
+    gap: 40px;
+  }
+}
 body #browse .header h3 {
   font-weight: 600;
   font-size: 38px;
   line-height: 120%;
   text-transform: capitalize;
 }
+@media screen and (max-width: 1050px) {
+  body #browse .header h3 {
+    font-size: 28px;
+    line-height: 140%;
+  }
+}
 body #browse .categories {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+@media screen and (max-width: 690px) {
+  body #browse .categories {
+    gap: 20px;
+  }
 }
 body #browse .categories .category {
   display: flex;
@@ -755,8 +1049,32 @@ body #browse .categories .category {
   background: #3b3b3b;
   border-radius: 20px;
 }
+@media screen and (max-width: 1050px) {
+  body #browse .categories .category {
+    width: 150px;
+    height: 209px;
+  }
+}
+@media screen and (max-width: 690px) {
+  body #browse .categories .category {
+    width: 147.5px;
+    height: 209px;
+  }
+}
 body #browse .categories .category img {
   border-radius: 20px 20px 0px 0px;
+}
+@media screen and (max-width: 1050px) {
+  body #browse .categories .category img {
+    width: 150px;
+    height: 142px;
+  }
+}
+@media screen and (max-width: 690px) {
+  body #browse .categories .category img {
+    width: 147.5px;
+    height: 142px;
+  }
 }
 body #browse .categories .category .text {
   display: flex;
@@ -770,6 +1088,13 @@ body #browse .categories .category .text {
   width: 240px;
   height: 76px;
 }
+@media screen and (max-width: 1050px) {
+  body #browse .categories .category .text {
+    padding: 20px 20px 25px;
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
 body #discoverMore {
   display: flex;
   flex-direction: column;
@@ -777,16 +1102,44 @@ body #discoverMore {
   padding: 80px 195px;
   gap: 60px;
 }
+@media screen and (max-width: 1050px) {
+  body #discoverMore {
+    padding: 40px 195px 80px;
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 690px) {
+  body #discoverMore {
+    padding: 40px 0px 60px;
+  }
+}
 body #discoverMore .header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   gap: 100px;
 }
+@media screen and (max-width: 1050px) {
+  body #discoverMore .header {
+    width: 690px;
+  }
+}
+@media screen and (max-width: 690px) {
+  body #discoverMore .header {
+    width: 315px;
+  }
+}
 body #discoverMore .header .text {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+@media screen and (max-width: 1050px) {
+  body #discoverMore .header .text h3 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+  }
 }
 body #discoverMore .header .text p {
   font-weight: 400;
@@ -794,6 +1147,13 @@ body #discoverMore .header .text p {
   line-height: 160%;
   color: #ffffff;
   text-transform: capitalize;
+}
+@media screen and (max-width: 1050px) {
+  body #discoverMore .header .text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
 }
 body #discoverMore .header button {
   display: flex;
@@ -817,9 +1177,20 @@ body #discoverMore .header button {
 body #discoverMore .header button:hover {
   transform: scale(0.9);
 }
+@media screen and (max-width: 690px) {
+  body #discoverMore .header button {
+    width: 315px;
+  }
+}
+@media screen and (max-width: 690px) {
+  body #discoverMore .header button {
+    display: none;
+  }
+}
 body #discoverMore .discoverCards {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 body #discoverMore .discoverCards .discoverCard {
   display: flex;
@@ -829,6 +1200,28 @@ body #discoverMore .discoverCards .discoverCard {
   height: 469px;
   background: #3b3b3b;
   border-radius: 20px;
+}
+@media screen and (max-width: 690px) {
+  body #discoverMore .discoverCards .discoverCard {
+    width: 315px;
+    height: 402px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  body #discoverMore .discoverCards .discoverCard:nth-child(3) {
+    display: none;
+  }
+}
+@media screen and (max-width: 690px) {
+  body #discoverMore .discoverCards .discoverCard:nth-child(3) {
+    display: flex;
+  }
+}
+@media screen and (max-width: 690px) {
+  body #discoverMore .discoverCards .discoverCard > img {
+    width: 315px;
+    height: 238px;
+  }
 }
 body #discoverMore .discoverCards .discoverCard .text {
   display: flex;
@@ -888,6 +1281,39 @@ body #discoverMore .discoverCards .discoverCard .text .bottom .bottom_right {
   gap: 8px;
   width: 135px;
 }
+body #discoverMore > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  gap: 12px;
+  background-color: #2b2b2b;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+  transition: 0.3s;
+  border: 2px solid transparent;
+  border-color: #a259ff;
+  height: 60px;
+  padding: 20px 50px !important;
+  display: none;
+}
+body #discoverMore > button:hover {
+  transform: scale(0.9);
+}
+@media screen and (max-width: 690px) {
+  body #discoverMore > button {
+    width: 315px;
+  }
+}
+@media screen and (max-width: 690px) {
+  body #discoverMore > button {
+    display: flex;
+  }
+}
 body #highLight {
   display: flex;
   flex-direction: column;
@@ -895,7 +1321,7 @@ body #highLight {
 }
 body #highLight img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  width: 1280px;
+  width: 100vw;
   height: 660px;
 }
 body #howItWorks {
@@ -905,11 +1331,30 @@ body #howItWorks {
   padding: 80px 195px;
   gap: 48px;
 }
+@media screen and (max-width: 1050px) {
+  body #howItWorks {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+  }
+}
+@media screen and (max-width: 690px) {
+  body #howItWorks {
+    padding: 40px 195px;
+  }
+}
 body #howItWorks .header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
+}
+@media screen and (max-width: 1050px) {
+  body #howItWorks .header h3 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+  }
 }
 body #howItWorks .header p {
   font-weight: 400;
@@ -918,9 +1363,17 @@ body #howItWorks .header p {
   color: #ffffff;
   text-transform: capitalize;
 }
+@media screen and (max-width: 1050px) {
+  body #howItWorks .header p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
 body #howItWorks .infoCards {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 body #howItWorks .infoCards .infoCard {
   display: flex;
@@ -931,11 +1384,56 @@ body #howItWorks .infoCards .infoCard {
   background: #3b3b3b;
   border-radius: 20px;
 }
+@media screen and (max-width: 1050px) {
+  body #howItWorks .infoCards .infoCard {
+    width: 210px;
+    height: 320px;
+  }
+}
+@media screen and (max-width: 690px) {
+  body #howItWorks .infoCards .infoCard {
+    width: 315px;
+    height: 157px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  body #howItWorks .infoCards .infoCard img {
+    width: 160px;
+    height: 160px;
+  }
+}
+@media screen and (max-width: 690px) {
+  body #howItWorks .infoCards .infoCard img {
+    width: 100px;
+    height: 100px;
+  }
+}
 body #howItWorks .infoCards .infoCard .text {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+}
+@media screen and (max-width: 690px) {
+  body #howItWorks .infoCards .infoCard .text {
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 1050px) {
+  body #howItWorks .infoCards .infoCard .text h5 {
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 690px) {
+  body #howItWorks .infoCards .infoCard .text h5 {
+    text-align: start;
+  }
 }
 body #howItWorks .infoCards .infoCard .text p {
   font-weight: 400;
@@ -944,12 +1442,38 @@ body #howItWorks .infoCards .infoCard .text p {
   text-align: center;
   color: #ffffff;
 }
+@media screen and (max-width: 1050px) {
+  body #howItWorks .infoCards .infoCard .text p {
+    font-size: 12px;
+    line-height: 140%;
+    width: 170px;
+    height: 68px;
+  }
+}
+@media screen and (max-width: 690px) {
+  body #howItWorks .infoCards .infoCard .text p {
+    width: 155px;
+    height: 85px;
+    text-align: start;
+  }
+}
 body #subscribe {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 40px 195px 80px;
   gap: 10px;
+}
+@media screen and (max-width: 1050px) {
+  body #subscribe {
+    padding: 40px 0px 80px;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 690px) {
+  body #subscribe {
+    padding: 40px 0px;
+  }
 }
 body #subscribe .subscribe_container {
   display: flex;
@@ -959,6 +1483,38 @@ body #subscribe .subscribe_container {
   background: #3b3b3b;
   border-radius: 20px;
 }
+@media screen and (max-width: 1050px) {
+  body #subscribe .subscribe_container {
+    padding: 40px 30px;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 690px) {
+  body #subscribe .subscribe_container {
+    padding: 0px;
+    background: transparent;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1050px) {
+  body #subscribe .subscribe_container > img {
+    width: 300px;
+    height: 280px;
+  }
+}
+@media screen and (max-width: 690px) {
+  body #subscribe .subscribe_container > img {
+    width: 315px;
+    height: 255px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  body #subscribe .subscribe_container .emailInput h3 {
+    font-size: 28px;
+    line-height: 140%;
+  }
+}
 body #subscribe .subscribe_container .emailInput p {
   font-weight: 400;
   font-size: 22px;
@@ -967,10 +1523,28 @@ body #subscribe .subscribe_container .emailInput p {
   text-transform: capitalize;
   margin: 10px 0 40px;
 }
+@media screen and (max-width: 1050px) {
+  body #subscribe .subscribe_container .emailInput p {
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
 body #subscribe .subscribe_container .emailInput .subscribeForm {
   width: 425px;
   height: 60px;
   position: relative;
+}
+@media screen and (max-width: 1050px) {
+  body #subscribe .subscribe_container .emailInput .subscribeForm {
+    width: 300px;
+    height: 108px;
+    position: initial;
+  }
+}
+@media screen and (max-width: 690px) {
+  body #subscribe .subscribe_container .emailInput .subscribeForm {
+    width: 315px;
+  }
 }
 body #subscribe .subscribe_container .emailInput .subscribeForm input {
   box-sizing: border-box;
@@ -986,6 +1560,14 @@ body #subscribe .subscribe_container .emailInput .subscribeForm input {
   font-size: 16px;
   line-height: 140%;
   color: #2b2b2b;
+}
+@media screen and (max-width: 1050px) {
+  body #subscribe .subscribe_container .emailInput .subscribeForm input {
+    margin-bottom: 16px;
+    width: 100%;
+    padding: 16px 20px;
+    height: 46px;
+  }
 }
 body #subscribe .subscribe_container .emailInput .subscribeForm button {
   display: flex;
@@ -1010,4 +1592,16 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button {
 }
 body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
   transform: scale(0.9);
+}
+@media screen and (max-width: 690px) {
+  body #subscribe .subscribe_container .emailInput .subscribeForm button {
+    width: 315px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  body #subscribe .subscribe_container .emailInput .subscribeForm button {
+    position: initial;
+    height: 46px;
+    width: 100%;
+  }
 }

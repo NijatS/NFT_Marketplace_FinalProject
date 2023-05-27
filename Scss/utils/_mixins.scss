@@ -16,6 +16,9 @@
   &:hover {
     transform: scale(0.9);
   }
+  @media screen and (max-width: 690px) {
+    width: 315px;
+  }
 }
 @mixin bodyText() {
   font-weight: 400;
