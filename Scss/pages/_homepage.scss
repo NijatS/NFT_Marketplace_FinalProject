@@ -97,6 +97,10 @@ body {
             flex-direction: row;
             align-items: flex-start;
             gap: 12px;
+            img {
+              width: 24px;
+              height: 24px;
+            }
             p {
               font-weight: 400;
               font-size: 16px;
@@ -144,7 +148,188 @@ body {
         gap: 15px;
         width: 330px;
         height: 525px;
+        .img {
+          display: flex;
+          gap: 15px;
+          flex-wrap: wrap;
+          img {
+            border-radius: 20px;
+            width: 100px;
+            height: 100px;
+            &:first-child {
+              width: 330px;
+              height: 330px;
+            }
+          }
+          div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 32px 15px;
+            gap: 10px;
+            width: 100px;
+            height: 100px;
+            background: $buttonBlue;
+            border-radius: 20px;
+            font-family: "Space Mono";
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 160%;
+            text-transform: capitalize;
+          }
+        }
+        .info {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          & > p {
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 140%;
+            text-transform: capitalize;
+          }
+          div {
+            display: flex;
+            gap: 12px;
+            img {
+              width: 24px;
+              height: 24px;
+            }
+            p {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 140%;
+            }
+          }
+        }
       }
     }
+  }
+  #top_creator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 195px;
+    gap: 60px;
+    .header {
+      display: flex;
+      align-items: flex-end;
+      gap: 100px;
+      .left {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: $white;
+        text-transform: capitalize;
+        width: 703px;
+        height: 91px;
+        h3 {
+          font-weight: 600;
+          font-size: 38px;
+          line-height: 120%;
+        }
+        p {
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 160%;
+        }
+      }
+      button {
+        @include buttons($mainBackgroundColor);
+        border-color: $buttonBlue;
+        height: 60px;
+        padding: 20px 50px !important;
+      }
+    }
+    .avatars {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      .avatar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+        isolation: isolate;
+        width: 240px;
+        height: 238px;
+        background: $backgroundSecondary;
+        border-radius: 20px;
+        position: relative;
+        img {
+          width: 110px;
+          height: 120px;
+        }
+        .number {
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          left: 20px;
+          top: 18px;
+          background: #2b2b2b;
+          border-radius: 20px;
+          font-family: "Space Mono";
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          color: $captionText;
+          span {
+            margin: auto;
+          }
+        }
+        .text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 5px;
+          width: 200px;
+          height: 58px;
+          color: $white;
+          h5 {
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 140%;
+            text-align: center;
+            text-transform: capitalize;
+          }
+          div {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            height: 22px;
+            p {
+              &:first-child {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                text-align: right;
+                color: $captionText;
+              }
+              &:last-child {
+                font-family: "Space Mono";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #browse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 195px;
+    gap: 60px;
   }
 }

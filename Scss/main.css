@@ -202,6 +202,7 @@ nav .nav_menu button {
   text-align: center;
   color: #ffffff;
   transition: 0.3s;
+  border: 2px solid transparent;
 }
 nav .nav_menu button:hover {
   transform: scale(0.9);
@@ -264,6 +265,7 @@ body #hero .hero_container .left_side button {
   text-align: center;
   color: #ffffff;
   transition: 0.3s;
+  border: 2px solid transparent;
   width: 224px;
   margin: 30px 0;
 }
@@ -330,6 +332,10 @@ body #hero .hero_container .right_side .info div {
   align-items: flex-start;
   gap: 12px;
 }
+body #hero .hero_container .right_side .info div img {
+  width: 24px;
+  height: 24px;
+}
 body #hero .hero_container .right_side .info div p {
   font-weight: 400;
   font-size: 16px;
@@ -374,4 +380,199 @@ body #trending .cards .card {
   gap: 15px;
   width: 330px;
   height: 525px;
+}
+body #trending .cards .card .img {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+body #trending .cards .card .img img {
+  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+}
+body #trending .cards .card .img img:first-child {
+  width: 330px;
+  height: 330px;
+}
+body #trending .cards .card .img div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 15px;
+  gap: 10px;
+  width: 100px;
+  height: 100px;
+  background: #a259ff;
+  border-radius: 20px;
+  font-family: "Space Mono";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 160%;
+  text-transform: capitalize;
+}
+body #trending .cards .card .info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body #trending .cards .card .info > p {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+body #trending .cards .card .info div {
+  display: flex;
+  gap: 12px;
+}
+body #trending .cards .card .info div img {
+  width: 24px;
+  height: 24px;
+}
+body #trending .cards .card .info div p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+body #top_creator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 195px;
+  gap: 60px;
+}
+body #top_creator .header {
+  display: flex;
+  align-items: flex-end;
+  gap: 100px;
+}
+body #top_creator .header .left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #ffffff;
+  text-transform: capitalize;
+  width: 703px;
+  height: 91px;
+}
+body #top_creator .header .left h3 {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 120%;
+}
+body #top_creator .header .left p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+}
+body #top_creator .header button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  gap: 12px;
+  background-color: #2b2b2b;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+  transition: 0.3s;
+  border: 2px solid transparent;
+  border-color: #a259ff;
+  height: 60px;
+  padding: 20px 50px !important;
+}
+body #top_creator .header button:hover {
+  transform: scale(0.9);
+}
+body #top_creator .avatars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+body #top_creator .avatars .avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  isolation: isolate;
+  width: 240px;
+  height: 238px;
+  background: #3b3b3b;
+  border-radius: 20px;
+  position: relative;
+}
+body #top_creator .avatars .avatar img {
+  width: 110px;
+  height: 120px;
+}
+body #top_creator .avatars .avatar .number {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 20px;
+  top: 18px;
+  background: #2b2b2b;
+  border-radius: 20px;
+  font-family: "Space Mono";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #858584;
+}
+body #top_creator .avatars .avatar .number span {
+  margin: auto;
+}
+body #top_creator .avatars .avatar .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 200px;
+  height: 58px;
+  color: #ffffff;
+}
+body #top_creator .avatars .avatar .text h5 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: capitalize;
+}
+body #top_creator .avatars .avatar .text div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  height: 22px;
+}
+body #top_creator .avatars .avatar .text div p:first-child {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: right;
+  color: #858584;
+}
+body #top_creator .avatars .avatar .text div p:last-child {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+}
+body #browse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 195px;
+  gap: 60px;
 }
