@@ -1,0 +1,60 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: $mainBackgroundColor;
+  .nav_logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    height: 32px;
+    position: relative;
+    img {
+      &:first-child {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        left: 0px;
+        top: 0px;
+      }
+      &:last-child {
+        position: absolute;
+        width: 199.41px;
+        height: 19.8px;
+        left: 44px;
+        top: 8.6px;
+      }
+    }
+  }
+  .nav_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    a {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 140%;
+      text-align: center;
+      padding: 12px 20px;
+      text-decoration: none;
+      color: $white;
+      transition: 0.3s;
+      &:hover {
+        transform: scale(0.9);
+      }
+    }
+    button {
+      @include buttons($buttonBlue);
+    }
+    #burgerIcon {
+      display: none;
+    }
+  }
+}
