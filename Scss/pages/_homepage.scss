@@ -3,6 +3,9 @@ body {
   .container {
     width: 1050px;
   }
+  button {
+    box-sizing: border-box;
+  }
   #hero {
     display: flex;
     justify-content: center;
@@ -455,6 +458,103 @@ body {
               gap: 8px;
               width: 135px;
             }
+          }
+        }
+      }
+    }
+  }
+  #highLight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      width: 1280px;
+      height: 660px;
+    }
+  }
+  #howItWorks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 195px;
+    gap: 48px;
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      p {
+        @include bodyText();
+      }
+    }
+    .infoCards {
+      display: flex;
+      gap: 30px;
+      .infoCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 30px 30px;
+        gap: 20px;
+        background: $backgroundSecondary;
+        border-radius: 20px;
+        .text {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+          p {
+            @include baseBody();
+          }
+        }
+      }
+    }
+  }
+  #subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 195px 80px;
+    gap: 10px;
+    .subscribe_container {
+      display: flex;
+      align-items: center;
+      padding: 60px;
+      gap: 80px;
+      background: $backgroundSecondary;
+      border-radius: 20px;
+      .emailInput {
+        p {
+          @include bodyText();
+          margin: 10px 0 40px;
+        }
+        .subscribeForm {
+          width: 425px;
+          height: 60px;
+          position: relative;
+          input {
+            box-sizing: border-box;
+            width: 425px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            padding: 16px 0px 16px 20px;
+            gap: 12px;
+            background: $white;
+            border-radius: 20px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: $mainBackgroundColor;
+          }
+          button {
+            @include buttons($buttonBlue);
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 211px;
+            height: 60px;
           }
         }
       }

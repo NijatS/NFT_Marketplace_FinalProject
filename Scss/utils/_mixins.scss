@@ -24,6 +24,13 @@
   color: $white;
   text-transform: capitalize;
 }
+@mixin baseBody() {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: $white;
+}
 @mixin bodyTextSpace() {
   font-family: "Space Mono";
   font-weight: 400;

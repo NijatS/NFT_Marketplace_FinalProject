@@ -2,6 +2,7 @@ const cards = document.querySelectorAll(".card");
 const avatarsDiv = document.querySelector(".avatars");
 const categoryDiv = document.querySelector(".categories");
 const discoverDiv = document.querySelector(".discoverCards");
+const infoDiv = document.querySelector(".infoCards");
 let j = 1;
 const cardName = ["DSGN Animals", "Magic Mushrooms", "Disco Machines"];
 const cardAvatar = ["MrFox", "Shroomie", "BeKind2Robots"];
@@ -49,6 +50,23 @@ const moreDiscover = [
     avatarText: "NebulaKid",
   },
 ];
+const infoCards = [
+  {
+    img: "..\\Images\\Trendings\\howItWork1.png",
+    head: "Setup Your wallet",
+    info: "Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top right corner.",
+  },
+  {
+    img: "..\\Images\\Trendings\\howItWork2.png",
+    head: "Create Collection",
+    info: "Upload your work and setup your collection. Add a description, social links and floor price.",
+  },
+  {
+    img: "..\\Images\\Trendings\\howItWork3.png",
+    head: "Start Earning",
+    info: "Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.",
+  },
+];
 cards.forEach((card) => {
   const imgDiv = card.querySelector(".img");
   const infoHead = card.querySelector(".info ");
@@ -64,7 +82,6 @@ cards.forEach((card) => {
   infoHead.children[1].children[1].textContent = cardAvatar[j - 1];
   j++;
 });
-
 j = 1;
 topAvatar.forEach((avatar) => {
   const div = document.createElement("div");
@@ -74,7 +91,6 @@ topAvatar.forEach((avatar) => {
   avatarsDiv.append(div);
   j++;
 });
-
 categories.forEach((category) => {
   const div = document.createElement("div");
   div.className = "category";
@@ -84,7 +100,6 @@ categories.forEach((category) => {
 });
 moreDiscover.forEach((data) => {
   const div = document.createElement("div");
-  console.log(data.img);
   div.className = "discoverCard";
   div.innerHTML = `<img src="${data.img}">
   <div class="text">
@@ -107,4 +122,12 @@ moreDiscover.forEach((data) => {
   </div>
   </div>`;
   discoverDiv.append(div);
+});
+infoCards.forEach((data) => {
+  const div = document.createElement("div");
+  div.className = "infoCard";
+  div.innerHTML = `<img src="${data.img}">
+  <div class="text"><h5>${data.head}</h5>
+  <p>${data.info}</p></div>`;
+  infoDiv.append(div);
 });

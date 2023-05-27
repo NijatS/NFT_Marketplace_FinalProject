@@ -227,11 +227,153 @@ nav .nav_menu #burgerIcon {
   display: none;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 195px;
+  gap: 30px;
+  background: #3b3b3b;
+}
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+  color: #cccccc;
+  text-align: start;
+}
+footer h5 {
+  font-family: "Space Mono";
+}
+footer .footer_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 31px;
+}
+footer .footer_top > div:first-child .footer_logo {
+  width: 243.41px;
+  height: 32px;
+  display: flex;
+  margin-bottom: 30px;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+  height: 32px;
+  position: relative;
+}
+footer .footer_top > div:first-child .footer_logo img:first-child {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 0px;
+  top: 0px;
+}
+footer .footer_top > div:first-child .footer_logo img:last-child {
+  position: absolute;
+  width: 199.41px;
+  height: 19.8px;
+  left: 44px;
+  top: 8.6px;
+}
+footer .footer_top > div:first-child p:nth-child(3) {
+  margin: 20px 0 15px;
+}
+footer .footer_top > div:first-child .contact {
+  display: flex;
+  gap: 10px;
+}
+footer .footer_top > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 240px;
+  height: 166px;
+}
+footer .footer_top > div:nth-child(2) div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .footer_top > div:last-child p {
+  margin: 25px 0 20px;
+  width: 330px;
+  height: 44px;
+}
+footer .footer_top > div:last-child .subscribeForm {
+  width: 425px;
+  height: 60px;
+  position: relative;
+}
+footer .footer_top > div:last-child .subscribeForm input {
+  box-sizing: border-box;
+  width: 425px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 16px 0px 16px 20px;
+  gap: 12px;
+  background: #ffffff;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #2b2b2b;
+}
+footer .footer_top > div:last-child .subscribeForm button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  gap: 12px;
+  background-color: #a259ff;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+  transition: 0.3s;
+  border: 2px solid transparent;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 211px;
+  height: 60px;
+}
+footer .footer_top > div:last-child .subscribeForm button:hover {
+  transform: scale(0.9);
+}
+footer .footer_bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+  width: 1049.41px;
+  height: 33px;
+  padding-top: 20px;
+  border-top: 1px solid #858584;
+}
+footer .footer_bottom p {
+  font-family: "Work Sans";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  color: #cccccc;
+}
+
 body {
   background-color: #2b2b2b;
 }
 body .container {
   width: 1050px;
+}
+body button {
+  box-sizing: border-box;
 }
 body #hero {
   display: flex;
@@ -745,4 +887,127 @@ body #discoverMore .discoverCards .discoverCard .text .bottom .bottom_right {
   align-items: flex-end;
   gap: 8px;
   width: 135px;
+}
+body #highLight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body #highLight img {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  width: 1280px;
+  height: 660px;
+}
+body #howItWorks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 195px;
+  gap: 48px;
+}
+body #howItWorks .header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+body #howItWorks .header p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+body #howItWorks .infoCards {
+  display: flex;
+  gap: 30px;
+}
+body #howItWorks .infoCards .infoCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 30px 30px;
+  gap: 20px;
+  background: #3b3b3b;
+  border-radius: 20px;
+}
+body #howItWorks .infoCards .infoCard .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+body #howItWorks .infoCards .infoCard .text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+}
+body #subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 195px 80px;
+  gap: 10px;
+}
+body #subscribe .subscribe_container {
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  gap: 80px;
+  background: #3b3b3b;
+  border-radius: 20px;
+}
+body #subscribe .subscribe_container .emailInput p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin: 10px 0 40px;
+}
+body #subscribe .subscribe_container .emailInput .subscribeForm {
+  width: 425px;
+  height: 60px;
+  position: relative;
+}
+body #subscribe .subscribe_container .emailInput .subscribeForm input {
+  box-sizing: border-box;
+  width: 425px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 16px 0px 16px 20px;
+  gap: 12px;
+  background: #ffffff;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #2b2b2b;
+}
+body #subscribe .subscribe_container .emailInput .subscribeForm button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  gap: 12px;
+  background-color: #a259ff;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+  transition: 0.3s;
+  border: 2px solid transparent;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 211px;
+  height: 60px;
+}
+body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
+  transform: scale(0.9);
 }
