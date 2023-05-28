@@ -2244,12 +2244,276 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
      object-position: center;
 }
 #profile img:last-child {
-  position: absolute;
-  bottom: -50px;
   left: 115px;
   width: 120px;
   height: 120px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0;
+}
+#profile .avatar_container {
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+#artistInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0px;
+  gap: 30px;
+}
+#artistInfo .artisInfo_container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 30px;
+}
+#artistInfo .artisInfo_container .left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  width: 599px;
+}
+#artistInfo .artisInfo_container .left .buttons {
+  display: none;
+}
+#artistInfo .artisInfo_container .left .stat {
+  display: flex;
+  gap: 20px;
+}
+#artistInfo .artisInfo_container .left .stat div {
+  width: 156.67px;
+}
+#artistInfo .artisInfo_container .left .stat h4 {
+  font-family: "Space Mono";
+  color: #ffffff;
+}
+#artistInfo .artisInfo_container .left .stat p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+#artistInfo .artisInfo_container .left div:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#artistInfo .artisInfo_container .left div:nth-child(4) h5 {
+  color: #cccccc;
+  font-family: "Space Mono";
+}
+#artistInfo .artisInfo_container .left div:nth-child(4) p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+#artistInfo .artisInfo_container .left div:nth-child(5) {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 599px;
+}
+#artistInfo .artisInfo_container .left div:nth-child(5) h5 {
+  color: #cccccc;
+  font-family: "Space Mono";
+}
+#artistInfo .artisInfo_container .left div:nth-child(5) .contact {
+  display: flex;
+  gap: 10px;
+}
+#artistInfo .artisInfo_container .right {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+#artistInfo .artisInfo_container .right button:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  gap: 12px;
+  background-color: #a259ff;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+  transition: 0.3s;
+  border: 2px solid transparent;
+  width: 186px;
+  height: 60px;
+}
+#artistInfo .artisInfo_container .right button:first-child:hover {
+  transform: scale(0.9);
+}
+@media screen and (max-width: 690px) {
+  #artistInfo .artisInfo_container .right button:first-child {
+    width: 315px;
+  }
+}
+#artistInfo .artisInfo_container .right button:last-child {
+  width: 145px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  gap: 12px;
+  background-color: transparent;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+  transition: 0.3s;
+  border: 2px solid transparent;
+  border: 2px solid #a259ff;
+}
+#artistInfo .artisInfo_container .right button:last-child:hover {
+  transform: scale(0.9);
+}
+@media screen and (max-width: 690px) {
+  #artistInfo .artisInfo_container .right button:last-child {
+    width: 315px;
+  }
+}
+
+#frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+#frame .frame_container {
+  display: flex;
+}
+#frame .frame_container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 30px;
+  gap: 16px;
+  width: 350px;
+  height: 60px;
+}
+#frame .frame_container div h5 {
+  color: #cccccc;
+}
+#frame .frame_container div p {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  gap: 10px;
+  height: 32px;
+  background: #3b3b3b;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Space Mono";
+}
+#frame .frame_container div:first-child {
+  border-bottom: 2px solid #cccccc;
+}
+#frame .frame_container div:first-child h5 {
+  color: #ffffff;
+}
+#frame .frame_container div:first-child p {
+  background-color: #cccccc;
+}
+
+#nfrCards .nftCards_container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+#nfrCards .nftCards_container .nftCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 330px;
+  height: 469px;
+  background: #2b2b2b;
+  border-radius: 20px;
+}
+#nfrCards .nftCards_container .nftCard img {
+  width: 330px;
+  height: 295px;
+  border-radius: 20px 20px 0px 0px;
+}
+#nfrCards .nftCards_container .nftCard .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 30px 25px;
+  gap: 25px;
+  width: 330px;
+  height: 173px;
+}
+#nfrCards .nftCards_container .nftCard .text .head {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#nfrCards .nftCards_container .nftCard .text .head div {
+  display: flex;
+  gap: 12px;
+}
+#nfrCards .nftCards_container .nftCard .text .head div p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Space Mono";
+}
+#nfrCards .nftCards_container .nftCard .text .bottom {
+  display: flex;
+}
+#nfrCards .nftCards_container .nftCard .text .bottom p:first-child {
+  font-family: "Space Mono";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+}
+#nfrCards .nftCards_container .nftCard .text .bottom p:last-child {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Space Mono";
+}
+#nfrCards .nftCards_container .nftCard .text .bottom .left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 21px 0px 0px;
+  gap: 8px;
+  width: 135px;
+  height: 43px;
+}
+#nfrCards .nftCards_container .nftCard .text .bottom .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 8px;
+  width: 135px;
+  height: 43px;
 }
