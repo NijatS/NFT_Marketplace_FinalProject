@@ -3,6 +3,7 @@ const avatarsDiv = document.querySelector(".avatars");
 const categoryDiv = document.querySelector(".categories");
 const discoverDiv = document.querySelector(".discoverCards");
 const infoDiv = document.querySelector(".infoCards");
+const signUpBtn = document.querySelector("#signUp");
 let j = 1;
 const cardName = ["DSGN Animals", "Magic Mushrooms", "Disco Machines"];
 const cardAvatar = ["MrFox", "Shroomie", "BeKind2Robots"];

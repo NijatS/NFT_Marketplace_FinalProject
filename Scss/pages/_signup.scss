@@ -1,0 +1,138 @@
+#create {
+  display: flex;
+  justify-content: center;
+  .create_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    @media screen and (max-width: 1050px) {
+      padding: 0px;
+      gap: 40px;
+    }
+    @media screen and (max-width: 690px) {
+      flex-direction: column;
+    }
+    & > img {
+      width: calc(50% - 30px);
+      height: 691px;
+      @media screen and (max-width: 1050px) {
+        width: calc(50% - 20px);
+      }
+      @media screen and (max-width: 690px) {
+        width: 100%;
+        height: 232px;
+        object-position: center;
+        object-fit: cover;
+      }
+    }
+    & > div {
+      width: calc(50% - 20px);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 100px 0px;
+      gap: 40px;
+      height: 691px;
+      @media screen and (max-width: 1050px) {
+        width: calc(50% - 20px);
+        height: 615px;
+      }
+      @media screen and (max-width: 690px) {
+        width: 315px;
+        align-items: center;
+        padding: 30px 0px 40px;
+        gap: 30px;
+        height: 515px;
+      }
+      .top {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 460px;
+        gap: 40px;
+        @media screen and (max-width: 1050px) {
+          width: 325px;
+        }
+        @media screen and (max-width: 690px) {
+          width: 315px;
+        }
+        p {
+          @include bodyText();
+          @media screen and (max-width: 1050px) {
+            font-size: 16px;
+            line-height: 140%;
+          }
+        }
+        h2 {
+          @media screen and (max-width: 1050px) {
+            font-weight: 600;
+            font-size: 38px;
+            line-height: 120%;
+          }
+          @media screen and (max-width: 690px) {
+          }
+        }
+      }
+      .bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        width: 330px;
+        @media screen and (max-width: 1050px) {
+          width: 325px;
+        }
+        @media screen and (max-width: 690px) {
+          width: 315px;
+        }
+        .inputs {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 15px;
+          div {
+            position: relative;
+            input {
+              padding: 12px 20px 12px 52px;
+              background: $white;
+              border: 1px solid $captionText;
+              border-radius: 20px;
+              width: 330px;
+              height: 46px;
+              box-sizing: border-box;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 140%;
+              color: $mainBackgroundColor;
+              @media screen and (max-width: 1050px) {
+                width: 325px;
+              }
+              @media screen and (max-width: 690px) {
+                width: 315px;
+              }
+            }
+            img {
+              position: absolute;
+              left: 20px;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+        }
+        button {
+          @include buttons($buttonBlue);
+          width: 100%;
+          height: 46px;
+          @media screen and (max-width: 1050px) {
+            width: 325px;
+          }
+          @media screen and (max-width: 690px) {
+            width: 315px;
+          }
+        }
+      }
+    }
+  }
+}
