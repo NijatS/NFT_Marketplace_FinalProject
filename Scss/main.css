@@ -2243,13 +2243,21 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
   -o-object-position: center;
      object-position: center;
 }
+@media screen and (max-width: 1050px) {
+  #profile img:first-child {
+    height: 280px;
+  }
+}
+@media screen and (max-width: 690px) {
+  #profile img:first-child {
+    height: 250px;
+  }
+}
 #profile img:last-child {
-  left: 115px;
   width: 120px;
   height: 120px;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 0;
 }
 #profile .avatar_container {
   bottom: -50px;
@@ -2260,6 +2268,11 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
   flex-direction: row;
   align-items: flex-start;
 }
+@media screen and (max-width: 690px) {
+  #profile .avatar_container {
+    justify-content: center;
+  }
+}
 
 #artistInfo {
   display: flex;
@@ -2267,6 +2280,11 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
   align-items: center;
   padding: 40px 0px;
   gap: 30px;
+}
+@media screen and (max-width: 1050px) {
+  #artistInfo {
+    padding: 30px 0px;
+  }
 }
 #artistInfo .artisInfo_container {
   display: flex;
@@ -2281,8 +2299,105 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
   gap: 30px;
   width: 599px;
 }
+@media screen and (max-width: 1050px) {
+  #artistInfo .artisInfo_container .left {
+    width: 690px;
+    height: 393px;
+  }
+}
+@media screen and (max-width: 690px) {
+  #artistInfo .artisInfo_container .left {
+    width: 315px;
+    height: 466px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  #artistInfo .artisInfo_container .left h2 {
+    font-size: 38px;
+    line-height: 120%;
+  }
+}
+@media screen and (max-width: 690px) {
+  #artistInfo .artisInfo_container .left h2 {
+    font-size: 28px;
+    line-height: 140%;
+  }
+}
 #artistInfo .artisInfo_container .left .buttons {
   display: none;
+  justify-content: flex-end;
+  gap: 20px;
+}
+@media screen and (max-width: 690px) {
+  #artistInfo .artisInfo_container .left .buttons button {
+    width: 100%;
+  }
+}
+#artistInfo .artisInfo_container .left .buttons button:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  gap: 12px;
+  background-color: #a259ff;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+  transition: 0.3s;
+  border: 2px solid transparent;
+  width: 186px;
+  height: 60px;
+}
+#artistInfo .artisInfo_container .left .buttons button:first-child:hover {
+  transform: scale(0.9);
+}
+@media screen and (max-width: 690px) {
+  #artistInfo .artisInfo_container .left .buttons button:first-child {
+    width: 315px;
+  }
+}
+#artistInfo .artisInfo_container .left .buttons button:last-child {
+  width: 145px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  gap: 12px;
+  background-color: transparent;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+  transition: 0.3s;
+  border: 2px solid transparent;
+  border: 2px solid #a259ff;
+}
+#artistInfo .artisInfo_container .left .buttons button:last-child:hover {
+  transform: scale(0.9);
+}
+@media screen and (max-width: 690px) {
+  #artistInfo .artisInfo_container .left .buttons button:last-child {
+    width: 315px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  #artistInfo .artisInfo_container .left .buttons {
+    display: flex;
+  }
+}
+@media screen and (max-width: 690px) {
+  #artistInfo .artisInfo_container .left .buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+  }
 }
 #artistInfo .artisInfo_container .left .stat {
   display: flex;
@@ -2291,9 +2406,20 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
 #artistInfo .artisInfo_container .left .stat div {
   width: 156.67px;
 }
+@media screen and (max-width: 690px) {
+  #artistInfo .artisInfo_container .left .stat div {
+    width: 91.67px;
+  }
+}
 #artistInfo .artisInfo_container .left .stat h4 {
   font-family: "Space Mono";
   color: #ffffff;
+}
+@media screen and (max-width: 1050px) {
+  #artistInfo .artisInfo_container .left .stat h4 {
+    font-size: 22px;
+    line-height: 160%;
+  }
 }
 #artistInfo .artisInfo_container .left .stat p {
   font-weight: 400;
@@ -2301,6 +2427,12 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
   line-height: 160%;
   color: #ffffff;
   text-transform: capitalize;
+}
+@media screen and (max-width: 1050px) {
+  #artistInfo .artisInfo_container .left .stat p {
+    font-size: 16px;
+    line-height: 140%;
+  }
 }
 #artistInfo .artisInfo_container .left div:nth-child(4) {
   display: flex;
@@ -2311,6 +2443,12 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
   color: #cccccc;
   font-family: "Space Mono";
 }
+@media screen and (max-width: 1050px) {
+  #artistInfo .artisInfo_container .left div:nth-child(4) h5 {
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
 #artistInfo .artisInfo_container .left div:nth-child(4) p {
   font-weight: 400;
   font-size: 22px;
@@ -2318,15 +2456,37 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
   color: #ffffff;
   text-transform: capitalize;
 }
+@media screen and (max-width: 1050px) {
+  #artistInfo .artisInfo_container .left div:nth-child(4) p {
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
 #artistInfo .artisInfo_container .left div:nth-child(5) {
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 599px;
 }
+@media screen and (max-width: 1050px) {
+  #artistInfo .artisInfo_container .left div:nth-child(5) {
+    width: 690px;
+  }
+}
+@media screen and (max-width: 690px) {
+  #artistInfo .artisInfo_container .left div:nth-child(5) {
+    width: 315px;
+  }
+}
 #artistInfo .artisInfo_container .left div:nth-child(5) h5 {
   color: #cccccc;
   font-family: "Space Mono";
+}
+@media screen and (max-width: 1050px) {
+  #artistInfo .artisInfo_container .left div:nth-child(5) h5 {
+    font-size: 16px;
+    line-height: 140%;
+  }
 }
 #artistInfo .artisInfo_container .left div:nth-child(5) .contact {
   display: flex;
@@ -2336,6 +2496,11 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
   display: flex;
   justify-content: flex-end;
   gap: 20px;
+}
+@media screen and (max-width: 1050px) {
+  #artistInfo .artisInfo_container .right {
+    display: none;
+  }
 }
 #artistInfo .artisInfo_container .right button:first-child {
   display: flex;
@@ -2409,8 +2574,24 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
   width: 350px;
   height: 60px;
 }
+@media screen and (max-width: 1050px) {
+  #frame .frame_container div {
+    width: 226.67px;
+  }
+}
+@media screen and (max-width: 690px) {
+  #frame .frame_container div {
+    width: 105px;
+  }
+}
 #frame .frame_container div h5 {
   color: #cccccc;
+}
+@media screen and (max-width: 1050px) {
+  #frame .frame_container div h5 {
+    font-size: 16px;
+    line-height: 140%;
+  }
 }
 #frame .frame_container div p {
   display: flex;
@@ -2427,6 +2608,18 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
   color: #ffffff;
   font-family: "Space Mono";
 }
+@media screen and (max-width: 1050px) {
+  #frame .frame_container div p {
+    height: 23px;
+    font-size: 12px;
+    line-height: 110%;
+  }
+}
+@media screen and (max-width: 690px) {
+  #frame .frame_container div p {
+    display: none;
+  }
+}
 #frame .frame_container div:first-child {
   border-bottom: 2px solid #cccccc;
 }
@@ -2437,26 +2630,56 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
   background-color: #cccccc;
 }
 
-#nfrCards .nftCards_container {
+#nftCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0px;
+  gap: 30px;
+  background: #3b3b3b;
+}
+#nftCards .nftCards_container {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
 }
-#nfrCards .nftCards_container .nftCard {
+#nftCards .nftCards_container .nftCard {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 330px;
   height: 469px;
-  background: #2b2b2b;
+  background-color: #2b2b2b;
   border-radius: 20px;
 }
-#nfrCards .nftCards_container .nftCard img {
+@media screen and (max-width: 1050px) {
+  #nftCards .nftCards_container .nftCard:nth-child(7), #nftCards .nftCards_container .nftCard:nth-child(8), #nftCards .nftCards_container .nftCard:nth-child(9) {
+    display: none;
+  }
+}
+@media screen and (max-width: 690px) {
+  #nftCards .nftCards_container .nftCard:nth-child(4), #nftCards .nftCards_container .nftCard:nth-child(5), #nftCards .nftCards_container .nftCard:nth-child(6) {
+    display: none;
+  }
+}
+@media screen and (max-width: 690px) {
+  #nftCards .nftCards_container .nftCard {
+    width: 315px;
+    height: 402px;
+  }
+}
+#nftCards .nftCards_container .nftCard img {
   width: 330px;
   height: 295px;
   border-radius: 20px 20px 0px 0px;
 }
-#nfrCards .nftCards_container .nftCard .text {
+@media screen and (max-width: 690px) {
+  #nftCards .nftCards_container .nftCard img {
+    width: 315px;
+    height: 238px;
+  }
+}
+#nftCards .nftCards_container .nftCard .text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -2465,16 +2688,27 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
   width: 330px;
   height: 173px;
 }
-#nfrCards .nftCards_container .nftCard .text .head {
+@media screen and (max-width: 690px) {
+  #nftCards .nftCards_container .nftCard .text {
+    width: 315px;
+    height: 164px;
+    padding: 20px 20px 25px;
+  }
+}
+#nftCards .nftCards_container .nftCard .text .top {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-#nfrCards .nftCards_container .nftCard .text .head div {
+#nftCards .nftCards_container .nftCard .text .top div {
   display: flex;
   gap: 12px;
 }
-#nfrCards .nftCards_container .nftCard .text .head div p {
+#nftCards .nftCards_container .nftCard .text .top div img {
+  width: 24px;
+  height: 24px;
+}
+#nftCards .nftCards_container .nftCard .text .top div p {
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
@@ -2482,16 +2716,16 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
   color: #ffffff;
   font-family: "Space Mono";
 }
-#nfrCards .nftCards_container .nftCard .text .bottom {
+#nftCards .nftCards_container .nftCard .text .bottom {
   display: flex;
 }
-#nfrCards .nftCards_container .nftCard .text .bottom p:first-child {
+#nftCards .nftCards_container .nftCard .text .bottom p:first-child {
   font-family: "Space Mono";
   font-weight: 400;
   font-size: 12px;
   line-height: 110%;
 }
-#nfrCards .nftCards_container .nftCard .text .bottom p:last-child {
+#nftCards .nftCards_container .nftCard .text .bottom p:last-child {
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
@@ -2499,7 +2733,13 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
   color: #ffffff;
   font-family: "Space Mono";
 }
-#nfrCards .nftCards_container .nftCard .text .bottom .left {
+@media screen and (max-width: 690px) {
+  #nftCards .nftCards_container .nftCard .text .bottom p:last-child {
+    font-size: 12px;
+    line-height: 110%;
+  }
+}
+#nftCards .nftCards_container .nftCard .text .bottom .left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -2508,7 +2748,13 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
   width: 135px;
   height: 43px;
 }
-#nfrCards .nftCards_container .nftCard .text .bottom .right {
+@media screen and (max-width: 690px) {
+  #nftCards .nftCards_container .nftCard .text .bottom .left {
+    width: 137.5px;
+    height: 34px;
+  }
+}
+#nftCards .nftCards_container .nftCard .text .bottom .right {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2516,4 +2762,14 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
   gap: 8px;
   width: 135px;
   height: 43px;
+}
+@media screen and (max-width: 690px) {
+  #nftCards .nftCards_container .nftCard .text .bottom .right {
+    width: 137.5px;
+    height: 34px;
+  }
+}
+
+footer {
+  border-top: 2px solid #2b2b2b;
 }

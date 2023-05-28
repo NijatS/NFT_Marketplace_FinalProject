@@ -6,13 +6,17 @@
       width: 100%;
       height: 320px;
       object-position: center;
+      @media screen and (max-width: 1050px) {
+        height: 280px;
+      }
+      @media screen and (max-width: 690px) {
+        height: 250px;
+      }
     }
     &:last-child {
-      left: 115px;
       width: 120px;
       height: 120px;
       object-fit: cover;
-      border-radius: 0;
     }
   }
   .avatar_container {
@@ -23,6 +27,9 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    @media screen and (max-width: 690px) {
+      justify-content: center;
+    }
   }
 }
 #artistInfo {
@@ -31,6 +38,9 @@
   align-items: center;
   padding: 40px 0px;
   gap: 30px;
+  @media screen and (max-width: 1050px) {
+    padding: 30px 0px;
+  }
   .artisInfo_container {
     display: flex;
     flex-direction: row;
@@ -42,21 +52,77 @@
       align-items: flex-start;
       gap: 30px;
       width: 599px;
+      @media screen and (max-width: 1050px) {
+        width: 690px;
+        height: 393px;
+      }
+      @media screen and (max-width: 690px) {
+        width: 315px;
+        height: 466px;
+      }
+      h2 {
+        @media screen and (max-width: 1050px) {
+          font-size: 38px;
+          line-height: 120%;
+        }
+        @media screen and (max-width: 690px) {
+          font-size: 28px;
+          line-height: 140%;
+        }
+      }
       .buttons {
         display: none;
+        justify-content: flex-end;
+        gap: 20px;
+        button {
+          @media screen and (max-width: 690px) {
+            width: 100%;
+          }
+          &:first-child {
+            @include buttons($buttonBlue);
+            width: 186px;
+            height: 60px;
+          }
+          &:last-child {
+            width: 145px;
+            height: 60px;
+            @include buttons(transparent);
+            border: 2px solid $buttonBlue;
+          }
+        }
+        @media screen and (max-width: 1050px) {
+          display: flex;
+        }
+        @media screen and (max-width: 690px) {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 0px;
+          gap: 20px;
+        }
       }
       .stat {
         display: flex;
         gap: 20px;
         div {
           width: 156.67px;
+          @media screen and (max-width: 690px) {
+            width: 91.67px;
+          }
         }
         h4 {
           font-family: "Space Mono";
           color: $white;
+          @media screen and (max-width: 1050px) {
+            font-size: 22px;
+            line-height: 160%;
+          }
         }
         p {
           @include bodyText();
+          @media screen and (max-width: 1050px) {
+            font-size: 16px;
+            line-height: 140%;
+          }
         }
       }
       div {
@@ -67,9 +133,17 @@
           h5 {
             color: $grayText;
             font-family: "Space Mono";
+            @media screen and (max-width: 1050px) {
+              font-size: 16px;
+              line-height: 140%;
+            }
           }
           p {
             @include bodyText();
+            @media screen and (max-width: 1050px) {
+              font-size: 16px;
+              line-height: 140%;
+            }
           }
         }
         &:nth-child(5) {
@@ -77,9 +151,19 @@
           flex-direction: column;
           gap: 10px;
           width: 599px;
+          @media screen and (max-width: 1050px) {
+            width: 690px;
+          }
+          @media screen and (max-width: 690px) {
+            width: 315px;
+          }
           h5 {
             color: $grayText;
             font-family: "Space Mono";
+            @media screen and (max-width: 1050px) {
+              font-size: 16px;
+              line-height: 140%;
+            }
           }
           .contact {
             display: flex;
@@ -92,6 +176,9 @@
       display: flex;
       justify-content: flex-end;
       gap: 20px;
+      @media screen and (max-width: 1050px) {
+        display: none;
+      }
       button {
         &:first-child {
           @include buttons($buttonBlue);
@@ -123,8 +210,18 @@
       gap: 16px;
       width: 350px;
       height: 60px;
+      @media screen and (max-width: 1050px) {
+        width: 226.67px;
+      }
+      @media screen and (max-width: 690px) {
+        width: 105px;
+      }
       h5 {
         color: $grayText;
+        @media screen and (max-width: 1050px) {
+          font-size: 16px;
+          line-height: 140%;
+        }
       }
       p {
         display: flex;
@@ -136,6 +233,14 @@
         border-radius: 20px;
         @include baseBody();
         font-family: "Space Mono";
+        @media screen and (max-width: 1050px) {
+          height: 23px;
+          font-size: 12px;
+          line-height: 110%;
+        }
+        @media screen and (max-width: 690px) {
+          display: none;
+        }
       }
       &:first-child {
         border-bottom: 2px solid $grayText;
@@ -149,7 +254,13 @@
     }
   }
 }
-#nfrCards {
+#nftCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0px;
+  gap: 30px;
+  background: $backgroundSecondary;
   .nftCards_container {
     display: flex;
     gap: 30px;
@@ -160,12 +271,34 @@
       align-items: center;
       width: 330px;
       height: 469px;
-      background: $mainBackgroundColor;
+      background-color: $mainBackgroundColor;
       border-radius: 20px;
+      &:nth-child(7),
+      &:nth-child(8),
+      &:nth-child(9) {
+        @media screen and (max-width: 1050px) {
+          display: none;
+        }
+      }
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6) {
+        @media screen and (max-width: 690px) {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 690px) {
+        width: 315px;
+        height: 402px;
+      }
       img {
         width: 330px;
         height: 295px;
         border-radius: 20px 20px 0px 0px;
+        @media screen and (max-width: 690px) {
+          width: 315px;
+          height: 238px;
+        }
       }
       .text {
         display: flex;
@@ -175,13 +308,22 @@
         gap: 25px;
         width: 330px;
         height: 173px;
-        .head {
+        @media screen and (max-width: 690px) {
+          width: 315px;
+          height: 164px;
+          padding: 20px 20px 25px;
+        }
+        .top {
           display: flex;
           flex-direction: column;
           gap: 5px;
           div {
             display: flex;
             gap: 12px;
+            img {
+              width: 24px;
+              height: 24px;
+            }
             p {
               @include baseBody();
               font-family: "Space Mono";
@@ -197,6 +339,10 @@
             &:last-child {
               @include baseBody();
               font-family: "Space Mono";
+              @media screen and (max-width: 690px) {
+                font-size: 12px;
+                line-height: 110%;
+              }
             }
           }
           .left {
@@ -207,6 +353,10 @@
             gap: 8px;
             width: 135px;
             height: 43px;
+            @media screen and (max-width: 690px) {
+              width: 137.5px;
+              height: 34px;
+            }
           }
           .right {
             display: flex;
@@ -216,9 +366,16 @@
             gap: 8px;
             width: 135px;
             height: 43px;
+            @media screen and (max-width: 690px) {
+              width: 137.5px;
+              height: 34px;
+            }
           }
         }
       }
     }
   }
+}
+footer {
+  border-top: 2px solid $mainBackgroundColor;
 }
