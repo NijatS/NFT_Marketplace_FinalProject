@@ -5,10 +5,24 @@ footer {
   padding: 40px 195px;
   gap: 30px;
   background: $backgroundSecondary;
+  @media screen and (max-width: 1050px) {
+    gap: 49px;
+  }
+  @media screen and (max-width: 690px) {
+    gap: 30px;
+    padding: 40px 195px;
+  }
+  a {
+    text-decoration: none;
+  }
   p {
     @include baseBody();
     color: $grayText;
     text-align: start;
+    @media screen and (max-width: 1050px) {
+    }
+    @media screen and (max-width: 690px) {
+    }
   }
   h5 {
     font-family: "Space Mono";
@@ -19,6 +33,15 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     gap: 31px;
+    @media screen and (max-width: 1050px) {
+      flex-direction: column;
+      gap: 30px;
+    }
+    @media screen and (max-width: 690px) {
+      width: 315px;
+      height: 633px;
+    }
+
     & > div {
       &:first-child {
         .footer_logo {
@@ -32,6 +55,9 @@ footer {
           gap: 10px;
           height: 32px;
           position: relative;
+          @media screen and (max-width: 690px) {
+            width: 315px;
+          }
           img {
             &:first-child {
               position: absolute;
@@ -65,6 +91,13 @@ footer {
         gap: 25px;
         width: 240px;
         height: 166px;
+        @media screen and (max-width: 1050px) {
+          gap: 20px;
+        }
+        @media screen and (max-width: 690px) {
+          width: 315px;
+        }
+
         div {
           display: flex;
           flex-direction: column;
@@ -76,11 +109,23 @@ footer {
           margin: 25px 0 20px;
           width: 330px;
           height: 44px;
+          @media screen and (max-width: 1050px) {
+            width: 690px;
+            margin: 20px 0;
+          }
+          @media screen and (max-width: 690px) {
+            width: 315px;
+          }
         }
         .subscribeForm {
           width: 425px;
           height: 60px;
           position: relative;
+          @media screen and (max-width: 690px) {
+            width: 315px;
+            height: 108px;
+            position: initial;
+          }
           input {
             box-sizing: border-box;
             width: 425px;
@@ -95,6 +140,12 @@ footer {
             font-size: 16px;
             line-height: 140%;
             color: $mainBackgroundColor;
+            @media screen and (max-width: 690px) {
+              margin-bottom: 16px;
+              width: 100%;
+              padding: 16px 20px;
+              height: 46px;
+            }
           }
           button {
             @include buttons($buttonBlue);
@@ -103,6 +154,14 @@ footer {
             top: 0;
             width: 211px;
             height: 60px;
+            @media screen and (max-width: 1050px) {
+              width: 179px;
+            }
+            @media screen and (max-width: 690px) {
+              position: initial;
+              height: 46px;
+              width: 100%;
+            }
           }
         }
       }
@@ -118,6 +177,12 @@ footer {
     height: 33px;
     padding-top: 20px;
     border-top: 1px solid #858584;
+    @media screen and (max-width: 1050px) {
+      width: 690px;
+    }
+    @media screen and (max-width: 690px) {
+      width: 315px;
+    }
     p {
       font-family: "Work Sans";
       font-weight: 400;
