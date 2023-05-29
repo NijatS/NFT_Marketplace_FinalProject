@@ -774,6 +774,9 @@ body {
                 @include bodyTextSpace();
               }
             }
+            img {
+              width: 24px;
+            }
           }
           .bottom {
             display: flex;
