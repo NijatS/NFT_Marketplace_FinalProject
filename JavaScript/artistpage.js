@@ -55,7 +55,11 @@ const cards = [
     creator: "Animakid",
   },
 ];
-
+const avatar = JSON.parse(localStorage.getItem("avatar"));
+const avatarImg = document.querySelector("#avatarImg");
+const avatarName = document.querySelector("#avatarName");
+avatarName.textContent = avatar.name;
+avatarImg.src = avatar.img;
 cards.forEach((card) => {
   const div = document.createElement("div");
   div.className = "nftCard";
@@ -64,8 +68,8 @@ cards.forEach((card) => {
     <div class ="top">
        <h5>${card.head}</h5>
        <div>
-          <img src="${card.creatorAvatar}">
-          <p>${card.creator}</p>
+          <img src="${avatar.img}">
+          <p>${avatar.name}</p>
        </div>
     </div>
     <div class ="bottom">

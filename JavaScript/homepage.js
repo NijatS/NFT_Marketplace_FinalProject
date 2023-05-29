@@ -102,7 +102,13 @@ avatarDivAll.forEach((avatar) => {
   avatar.addEventListener("click", () => {
     const img = ".." + avatar.children[1].src.split("0")[4];
     const name = avatar.querySelector("h5").textContent;
-    localStorage.setItem(avatar);
+    localStorage.setItem(
+      "avatar",
+      JSON.stringify({
+        img: img,
+        name: name,
+      })
+    );
   });
 });
 categories.forEach((category) => {
