@@ -1,0 +1,232 @@
+#browseMarket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0px;
+  gap: 30px;
+  @media screen and (max-width: 1050px) {
+    padding: 60px 0px;
+  }
+  @media screen and (max-width: 690px) {
+    padding: 40px 0px;
+  }
+  div {
+    &:first-child {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 10px;
+      h2 {
+        @media screen and (max-width: 1050px) {
+          font-size: 38px;
+          line-height: 120%;
+        }
+        @media screen and (max-width: 690px) {
+          font-size: 28px;
+          line-height: 140%;
+        }
+      }
+      p {
+        @include bodyText();
+        text-transform: none;
+        @media screen and (max-width: 1050px) {
+          @include baseBody();
+          text-align: start;
+        }
+      }
+    }
+    &:last-child {
+      position: relative;
+      input {
+        box-sizing: border-box;
+        padding: 18px 20px;
+        gap: 10px;
+        background-color: transparent;
+        border: 1px solid $backgroundSecondary;
+        border-radius: 20px;
+        width: 100%;
+        color: $white;
+        @media screen and (max-width: 1050px) {
+          padding: 19px 20px;
+        }
+        @media screen and (max-width: 690px) {
+          padding: 18px 20px;
+        }
+      }
+      img {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+#browseFrame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+  .browseFrame_container {
+    display: flex;
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0px 30px;
+      gap: 16px;
+      width: 525px;
+      height: 60px;
+      background-color: transparent;
+      transition: 0.3s;
+      border: 2px solid $mainBackgroundColor;
+      h5 {
+        color: $captionText;
+      }
+      p {
+        font-family: "Space Mono";
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 5px 10px;
+        gap: 10px;
+        background-color: $backgroundSecondary;
+        color: $white;
+        border-radius: 20px;
+      }
+    }
+  }
+}
+#nftCardsBrowse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0px;
+  gap: 30px;
+  background: $backgroundSecondary;
+  .nftCards_container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    .nftCardBrowse {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 330px;
+      height: 469px;
+      background-color: $mainBackgroundColor;
+      border-radius: 20px;
+      position: relative;
+      // &:nth-child(7),
+      // &:nth-child(8),
+      // &:nth-child(9) {
+      //   @media screen and (max-width: 1050px) {
+      //     display: none;
+      //   }
+      // }
+      // &:nth-child(4),
+      // &:nth-child(5),
+      // &:nth-child(6) {
+      //   @media screen and (max-width: 690px) {
+      //     display: none;
+      //   }
+      // }
+      @media screen and (max-width: 690px) {
+        width: 315px;
+        height: 402px;
+      }
+      img {
+        width: 330px;
+        height: 295px;
+        border-radius: 20px 20px 0px 0px;
+        @media screen and (max-width: 690px) {
+          width: 315px;
+          height: 238px;
+        }
+      }
+      i {
+        position: absolute;
+        font-size: 24px;
+        top: 10px;
+        right: 10px;
+        transition: 0.3s;
+        color: black;
+      }
+      .text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 30px 25px;
+        gap: 25px;
+        width: 330px;
+        height: 173px;
+        @media screen and (max-width: 690px) {
+          width: 315px;
+          height: 164px;
+          padding: 20px 20px 25px;
+        }
+        .top {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          div {
+            display: flex;
+            gap: 12px;
+            img {
+              width: 24px;
+              height: 24px;
+            }
+            p {
+              @include baseBody();
+              font-family: "Space Mono";
+            }
+          }
+        }
+        .bottom {
+          display: flex;
+          p {
+            &:first-child {
+              @include CaptionSpace();
+            }
+            &:last-child {
+              @include baseBody();
+              font-family: "Space Mono";
+              @media screen and (max-width: 690px) {
+                font-size: 12px;
+                line-height: 110%;
+              }
+            }
+          }
+          .left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px 21px 0px 0px;
+            gap: 8px;
+            width: 135px;
+            height: 43px;
+            @media screen and (max-width: 690px) {
+              width: 137.5px;
+              height: 34px;
+            }
+          }
+          .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 8px;
+            width: 135px;
+            height: 43px;
+            @media screen and (max-width: 690px) {
+              width: 137.5px;
+              height: 34px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

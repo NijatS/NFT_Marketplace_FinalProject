@@ -282,7 +282,7 @@ footer {
   align-items: center;
   padding: 40px 195px;
   gap: 30px;
-  background: #3b3b3b;
+  background: rgb(59, 59, 59);
 }
 @media screen and (max-width: 1050px) {
   footer {
@@ -643,7 +643,7 @@ body #hero .hero_container .left_side .mobile_hero .info {
   padding: 20px;
   gap: 10px;
   border-radius: 0px 0px 20px 20px;
-  background: #3b3b3b;
+  background: rgb(59, 59, 59);
   width: 510px;
   height: 109px;
   color: #ffffff;
@@ -784,7 +784,7 @@ body #hero .hero_container .right_side .info {
   padding: 20px;
   gap: 10px;
   border-radius: 0px 0px 20px 20px;
-  background: #3b3b3b;
+  background: rgb(59, 59, 59);
   width: 510px;
   height: 109px;
   color: #ffffff;
@@ -1080,7 +1080,7 @@ body #top_creator .avatars a .avatar {
   isolation: isolate;
   width: 240px;
   height: 238px;
-  background: #3b3b3b;
+  background: rgb(59, 59, 59);
   border-radius: 20px;
   position: relative;
 }
@@ -1129,7 +1129,7 @@ body #top_creator .avatars a .avatar .number {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #858584;
+  color: rgb(133, 133, 132);
 }
 @media screen and (max-width: 1050px) {
   body #top_creator .avatars a .avatar .number {
@@ -1194,7 +1194,7 @@ body #top_creator .avatars a .avatar .text div p {
 }
 body #top_creator .avatars a .avatar .text div p:first-child {
   text-align: right;
-  color: #858584;
+  color: rgb(133, 133, 132);
 }
 @media screen and (max-width: 1050px) {
   body #top_creator .avatars a .avatar .text div p:first-child {
@@ -1282,7 +1282,7 @@ body #browse .categories .category {
   align-items: flex-start;
   width: 240px;
   height: 316px;
-  background: #3b3b3b;
+  background: rgb(59, 59, 59);
   border-radius: 20px;
 }
 @media screen and (max-width: 1050px) {
@@ -1436,7 +1436,7 @@ body #discoverMore .discoverCards .discoverCard {
   align-items: center;
   width: 330px;
   height: 469px;
-  background: #3b3b3b;
+  background: rgb(59, 59, 59);
   border-radius: 20px;
 }
 @media screen and (max-width: 690px) {
@@ -1495,7 +1495,7 @@ body #discoverMore .discoverCards .discoverCard .text .bottom p:first-child {
   font-weight: 400;
   font-size: 12px;
   line-height: 110%;
-  color: #858584;
+  color: rgb(133, 133, 132);
 }
 body #discoverMore .discoverCards .discoverCard .text .bottom p:last-child {
   font-family: "Space Mono";
@@ -1617,7 +1617,7 @@ body #highLight #highLightM .text .left > div {
   gap: 12px;
   width: 151px;
   height: 44px;
-  background: #3b3b3b;
+  background: rgb(59, 59, 59);
   border-radius: 20px;
 }
 body #highLight #highLightM .text .left > div img {
@@ -1816,7 +1816,7 @@ body #howItWorks .infoCards .infoCard {
   align-items: center;
   padding: 10px 30px 30px;
   gap: 20px;
-  background: #3b3b3b;
+  background: rgb(59, 59, 59);
   border-radius: 20px;
   width: 330px;
   height: 439px;
@@ -1917,7 +1917,7 @@ body #subscribe .subscribe_container {
   align-items: center;
   padding: 60px;
   gap: 80px;
-  background: #3b3b3b;
+  background: rgb(59, 59, 59);
   border-radius: 20px;
 }
 @media screen and (max-width: 1050px) {
@@ -2173,7 +2173,7 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
 #create .create_container > div .bottom .inputs div input {
   padding: 12px 20px 12px 52px;
   background: #ffffff;
-  border: 1px solid #858584;
+  border: 1px solid rgb(133, 133, 132);
   border-radius: 20px;
   width: 330px;
   height: 46px;
@@ -2602,7 +2602,7 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
   padding: 5px 10px;
   gap: 10px;
   height: 32px;
-  background: #3b3b3b;
+  background: rgb(59, 59, 59);
   border-radius: 20px;
   font-weight: 400;
   font-size: 16px;
@@ -2639,7 +2639,7 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
   align-items: center;
   padding: 80px 0px;
   gap: 30px;
-  background: #3b3b3b;
+  background: rgb(59, 59, 59);
 }
 #nftCards .nftCards_container {
   display: flex;
@@ -2909,7 +2909,7 @@ footer {
   align-items: center;
   padding: 12px 0px;
   gap: 10px;
-  border: 1px solid #3b3b3b;
+  border: 1px solid rgb(59, 59, 59);
   border-radius: 20px;
 }
 #rankings .head > div {
@@ -2989,7 +2989,7 @@ footer {
   align-items: center;
   padding: 12px 0px;
   gap: 10px;
-  background-color: #3b3b3b;
+  background-color: rgb(59, 59, 59);
   border-radius: 20px;
 }
 #rankings .item > div {
@@ -3141,5 +3141,265 @@ footer {
 @media screen and (max-width: 1050px) {
   #rankings .item > div div:last-child p:nth-child(2) {
     display: none;
+  }
+}
+
+#browseMarket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0px;
+  gap: 30px;
+}
+@media screen and (max-width: 1050px) {
+  #browseMarket {
+    padding: 60px 0px;
+  }
+}
+@media screen and (max-width: 690px) {
+  #browseMarket {
+    padding: 40px 0px;
+  }
+}
+#browseMarket div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
+@media screen and (max-width: 1050px) {
+  #browseMarket div:first-child h2 {
+    font-size: 38px;
+    line-height: 120%;
+  }
+}
+@media screen and (max-width: 690px) {
+  #browseMarket div:first-child h2 {
+    font-size: 28px;
+    line-height: 140%;
+  }
+}
+#browseMarket div:first-child p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  color: #ffffff;
+  text-transform: capitalize;
+  text-transform: none;
+}
+@media screen and (max-width: 1050px) {
+  #browseMarket div:first-child p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #ffffff;
+    text-align: start;
+  }
+}
+#browseMarket div:last-child {
+  position: relative;
+}
+#browseMarket div:last-child input {
+  box-sizing: border-box;
+  padding: 18px 20px;
+  gap: 10px;
+  background-color: transparent;
+  border: 1px solid rgb(59, 59, 59);
+  border-radius: 20px;
+  width: 100%;
+  color: #ffffff;
+}
+@media screen and (max-width: 1050px) {
+  #browseMarket div:last-child input {
+    padding: 19px 20px;
+  }
+}
+@media screen and (max-width: 690px) {
+  #browseMarket div:last-child input {
+    padding: 18px 20px;
+  }
+}
+#browseMarket div:last-child img {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#browseFrame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+}
+#browseFrame .browseFrame_container {
+  display: flex;
+}
+#browseFrame .browseFrame_container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 30px;
+  gap: 16px;
+  width: 525px;
+  height: 60px;
+  background-color: transparent;
+  transition: 0.3s;
+  border: 2px solid #2b2b2b;
+}
+#browseFrame .browseFrame_container div h5 {
+  color: rgb(133, 133, 132);
+}
+#browseFrame .browseFrame_container div p {
+  font-family: "Space Mono";
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 10px;
+  gap: 10px;
+  background-color: rgb(59, 59, 59);
+  color: #ffffff;
+  border-radius: 20px;
+}
+
+#nftCardsBrowse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0px;
+  gap: 30px;
+  background: rgb(59, 59, 59);
+}
+#nftCardsBrowse .nftCards_container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+#nftCardsBrowse .nftCards_container .nftCardBrowse {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 330px;
+  height: 469px;
+  background-color: #2b2b2b;
+  border-radius: 20px;
+  position: relative;
+}
+@media screen and (max-width: 690px) {
+  #nftCardsBrowse .nftCards_container .nftCardBrowse {
+    width: 315px;
+    height: 402px;
+  }
+}
+#nftCardsBrowse .nftCards_container .nftCardBrowse img {
+  width: 330px;
+  height: 295px;
+  border-radius: 20px 20px 0px 0px;
+}
+@media screen and (max-width: 690px) {
+  #nftCardsBrowse .nftCards_container .nftCardBrowse img {
+    width: 315px;
+    height: 238px;
+  }
+}
+#nftCardsBrowse .nftCards_container .nftCardBrowse i {
+  position: absolute;
+  font-size: 24px;
+  top: 10px;
+  right: 10px;
+  transition: 0.3s;
+  color: black;
+}
+#nftCardsBrowse .nftCards_container .nftCardBrowse .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 30px 25px;
+  gap: 25px;
+  width: 330px;
+  height: 173px;
+}
+@media screen and (max-width: 690px) {
+  #nftCardsBrowse .nftCards_container .nftCardBrowse .text {
+    width: 315px;
+    height: 164px;
+    padding: 20px 20px 25px;
+  }
+}
+#nftCardsBrowse .nftCards_container .nftCardBrowse .text .top {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#nftCardsBrowse .nftCards_container .nftCardBrowse .text .top div {
+  display: flex;
+  gap: 12px;
+}
+#nftCardsBrowse .nftCards_container .nftCardBrowse .text .top div img {
+  width: 24px;
+  height: 24px;
+}
+#nftCardsBrowse .nftCards_container .nftCardBrowse .text .top div p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Space Mono";
+}
+#nftCardsBrowse .nftCards_container .nftCardBrowse .text .bottom {
+  display: flex;
+}
+#nftCardsBrowse .nftCards_container .nftCardBrowse .text .bottom p:first-child {
+  font-family: "Space Mono";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+}
+#nftCardsBrowse .nftCards_container .nftCardBrowse .text .bottom p:last-child {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Space Mono";
+}
+@media screen and (max-width: 690px) {
+  #nftCardsBrowse .nftCards_container .nftCardBrowse .text .bottom p:last-child {
+    font-size: 12px;
+    line-height: 110%;
+  }
+}
+#nftCardsBrowse .nftCards_container .nftCardBrowse .text .bottom .left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 21px 0px 0px;
+  gap: 8px;
+  width: 135px;
+  height: 43px;
+}
+@media screen and (max-width: 690px) {
+  #nftCardsBrowse .nftCards_container .nftCardBrowse .text .bottom .left {
+    width: 137.5px;
+    height: 34px;
+  }
+}
+#nftCardsBrowse .nftCards_container .nftCardBrowse .text .bottom .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 8px;
+  width: 135px;
+  height: 43px;
+}
+@media screen and (max-width: 690px) {
+  #nftCardsBrowse .nftCards_container .nftCardBrowse .text .bottom .right {
+    width: 137.5px;
+    height: 34px;
   }
 }

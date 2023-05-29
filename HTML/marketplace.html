@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../Scss/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav_logo">
+        <img src="../Images/svg/mainLogo.svg" alt="Main Logo" />
+        <img src="../Images/svg/NFTmarketplace.svg" alt="NFT text" />
+      </div>
+      <div class="nav_menu">
+        <a href="./marketplace.html">Marketplace</a>
+        <a href="./ranking.html">Rankings</a>
+        <a href="#">Connect a wallet</a>
+        <a href="./signup.html">
+          <button id="signUp">
+            <img src="../Images/svg/user.svg" alt="" />
+            Sign Up
+          </button>
+        </a>
+        <img src="../Images/svg/burgerMenu.svg" id="burgerIcon" alt="" />
+      </div>
+    </nav>
+    <section id="browseMarket">
+      <div class="container">
+        <h2>Browse Marketplace</h2>
+        <p>Browse through more than 50k NFTs on the NFT Marketplace.</p>
+      </div>
+      <div class="container">
+        <input type="text" placeholder="Search your favourite NFTs" />
+        <img src="../Images/svg/search.svg" alt="" />
+      </div>
+    </section>
+    <section id="browseFrame">
+      <div class="container browseFrame_container">
+        <div>
+          <h5>NFTs</h5>
+          <p>302</p>
+        </div>
+        <div>
+          <h5>Favourites</h5>
+          <p id="likes">0</p>
+        </div>
+      </div>
+    </section>
+    <section id="nftCardsBrowse">
+      <div class="container nftCards_container"></div>
+    </section>
+    <footer>
+      <div class="container footer_top">
+        <div>
+          <div class="footer_logo">
+            <img src="../Images/svg/mainLogo.svg" alt="Main Logo" />
+            <img src="../Images/svg/NFTmarketplace.svg" alt="NFT text" />
+          </div>
+          <p>NFT marketplace UI created with Anima for Figma.</p>
+          <p>Join our community</p>
+          <div class="contact">
+            <img src="../Images/svg/discord.svg" alt="" />
+            <img src="../Images/svg/youtube.svg" alt="" />
+            <img src="../Images/svg/twitter.svg" alt="" />
+            <img src="../Images/svg/instagram.svg" alt="" />
+          </div>
+        </div>
+        <div>
+          <h5>Explore</h5>
+          <div>
+            <a href="#"><p>Marketplace</p></a>
+            <a href="./ranking.html"><p>Rankings</p></a>
+            <a href="#"><p>Connect a wallet</p></a>
+          </div>
+        </div>
+        <div>
+          <h5>Join our weekly digest</h5>
+          <p>Get exclusive promotions & updates straight to your inbox.</p>
+          <div class="subscribeForm">
+            <input type="text" placeholder="Enter your email here" />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="container footer_bottom">
+        <p>Ⓒ Created Nijat Soltanov 2023</p>
+      </div>
+    </footer>
+    <script src="../JavaScript/marketplace.js"></script>
+  </body>
+</html>
