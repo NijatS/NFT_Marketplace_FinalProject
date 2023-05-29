@@ -87,15 +87,23 @@ cards.forEach((card) => {
 });
 j = 1;
 topAvatar.forEach((avatar) => {
-  if (mediaTablet.matches && j == 7) {
-    return;
-  }
   const div = document.createElement("div");
+  const a = document.createElement("a");
+  a.href = "./artistpage.html";
   div.className = "avatar";
   div.innerHTML = `<p class="number"><span>${j}</span></p><img src="..\\Images\\Avatars\\${avatar}.png" alt="">
   <div class="text"><h5>${avatar}</h5><div><p>Total Sales:</p><p>34.53 ETH</p></div></div>`;
-  avatarsDiv.append(div);
+  a.append(div);
+  avatarsDiv.append(a);
   j++;
+});
+const avatarDivAll = document.querySelectorAll(".avatar");
+avatarDivAll.forEach((avatar) => {
+  avatar.addEventListener("click", () => {
+    const img = ".." + avatar.children[1].src.split("0")[4];
+    const name = avatar.querySelector("h5").textContent;
+    localStorage.setItem(avatar);
+  });
 });
 categories.forEach((category) => {
   const div = document.createElement("div");

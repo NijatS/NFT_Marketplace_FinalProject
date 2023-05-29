@@ -421,6 +421,7 @@ body {
           font-weight: 600;
           font-size: 38px;
           line-height: 120%;
+
           @media screen and (max-width: 1050px) {
             font-size: 28px;
             line-height: 140%;
@@ -450,121 +451,125 @@ body {
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
-      .avatar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        gap: 20px;
-        isolation: isolate;
-        width: 240px;
-        height: 238px;
-        background: $backgroundSecondary;
-        border-radius: 20px;
-        position: relative;
-        @media screen and (max-width: 1050px) {
-          flex-direction: row;
-          justify-content: center;
-          align-items: flex-start;
-          width: 330px;
-          height: 100px;
-        }
-        @media screen and (max-width: 690px) {
-          width: 315px;
-          height: 100px;
-        }
-        &:nth-child(6) {
-          @media screen and (max-width: 690px) {
-            display: none;
-          }
-        }
-        img {
-          width: 110px;
-          height: 120px;
-          @media screen and (max-width: 1050px) {
-            width: 60px;
-            height: 60px;
-          }
-          @media screen and (max-width: 690px) {
-          }
-        }
-        .number {
-          position: absolute;
-          width: 30px;
-          height: 30px;
-          left: 20px;
-          top: 18px;
-          background: #2b2b2b;
-          border-radius: 20px;
-          font-family: "Space Mono";
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 140%;
-          display: flex;
-          align-items: center;
-          text-align: center;
-          color: $captionText;
-          @media screen and (max-width: 1050px) {
-            left: 12px;
-            top: 13px;
-          }
-          span {
-            margin: auto;
-          }
-        }
-        .text {
+      a {
+        text-decoration: none;
+        .avatar {
           display: flex;
           flex-direction: column;
-          justify-content: center;
           align-items: center;
-          gap: 5px;
-          width: 200px;
-          height: 58px;
-          color: $white;
+          padding: 20px;
+          gap: 20px;
+          isolation: isolate;
+          width: 240px;
+          height: 238px;
+          background: $backgroundSecondary;
+          border-radius: 20px;
+          position: relative;
+
           @media screen and (max-width: 1050px) {
+            flex-direction: row;
+            justify-content: center;
             align-items: flex-start;
-            width: 210px;
+            width: 330px;
+            height: 100px;
           }
           @media screen and (max-width: 690px) {
-            height: 58px;
+            width: 315px;
+            height: 100px;
           }
-          h5 {
-            font-weight: 600;
-            font-size: 22px;
-            line-height: 140%;
-            text-align: center;
-            text-transform: capitalize;
+          &:nth-child(6) {
+            @media screen and (max-width: 690px) {
+              display: none;
+            }
           }
-          div {
-            display: flex;
-            gap: 10px;
-            height: 22px;
-            width: 200px;
+          img {
+            width: 110px;
+            height: 120px;
             @media screen and (max-width: 1050px) {
-              gap: 5px;
+              width: 60px;
+              height: 60px;
+            }
+            @media screen and (max-width: 690px) {
+            }
+          }
+          .number {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            left: 20px;
+            top: 18px;
+            background: #2b2b2b;
+            border-radius: 20px;
+            font-family: "Space Mono";
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: $captionText;
+            @media screen and (max-width: 1050px) {
+              left: 12px;
+              top: 13px;
+            }
+            span {
+              margin: auto;
+            }
+          }
+          .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            width: 200px;
+            height: 58px;
+            color: $white;
+            @media screen and (max-width: 1050px) {
+              align-items: flex-start;
               width: 210px;
             }
             @media screen and (max-width: 690px) {
-              width: 195px;
+              height: 58px;
             }
-            p {
-              font-weight: 400;
-              font-size: 16px;
+            h5 {
+              font-weight: 600;
+              font-size: 22px;
               line-height: 140%;
-              width: 95px;
+              text-align: center;
+              text-transform: capitalize;
+            }
+            div {
+              display: flex;
+              gap: 10px;
               height: 22px;
-              &:first-child {
-                text-align: right;
-                color: $captionText;
-                @media screen and (max-width: 1050px) {
-                  width: 102.5px;
-                  height: 22px;
-                  text-align: left;
-                }
+              width: 200px;
+              @media screen and (max-width: 1050px) {
+                gap: 5px;
+                width: 210px;
               }
-              &:last-child {
-                font-family: "Space Mono";
-                color: $white;
+              @media screen and (max-width: 690px) {
+                width: 195px;
+              }
+              p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                width: 95px;
+                height: 22px;
+                &:first-child {
+                  text-align: right;
+                  color: $captionText;
+                  @media screen and (max-width: 1050px) {
+                    width: 102.5px;
+                    height: 22px;
+                    text-align: left;
+                  }
+                }
+                &:last-child {
+                  font-family: "Space Mono";
+                  color: $white;
+                }
               }
             }
           }
