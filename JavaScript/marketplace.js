@@ -87,6 +87,8 @@ const cards = [
 ];
 const nftCardsBrowseContainer = document.querySelector(".nftCards_container");
 const likeP = document.querySelector("#likes");
+const searchInput = document.querySelector("input");
+const nftCards = document.querySelector(".nftCards_container").children;
 divs[0].style.borderBottomColor = "rgb(133, 133, 132)";
 divs[0].querySelector("h5").style.color = "rgb(255,255,255)";
 divs[0].querySelector("p").style.backgroundColor = "rgb(133, 133, 132)";
@@ -111,6 +113,14 @@ divs.forEach((div) => {
       div.querySelector("p").style.backgroundColor = "rgb(133, 133, 132)";
     }
   });
+});
+searchInput.addEventListener("keyup", () => {
+  const matchedCard = Search();
+  if (matchedCard.length != 0) {
+    for (const card of matchedCard) {
+      card.style.display = "none";
+    }
+  }
 });
 function mainCards() {
   cards.forEach((card) => {
@@ -222,4 +232,23 @@ function refreshDiv() {
     div.querySelector("h5").style.color = "rgb(133, 133, 132)";
     div.querySelector("p").style.backgroundColor = "rgb(59, 59, 59)";
   });
+}
+function Search() {
+  let matchedCard = [];
+  for (const card of nftCards) {
+    card.style.display = "initial";
+    const head = card.querySelector("h5").textContent.trim().toLowerCase();
+    const creator = card
+      .querySelector(".top>div>p")
+      .textContent.trim()
+      .toLowerCase();
+    if (
+      head.includes(searchInput.value.toLowerCase()) ||
+      creator.includes(searchInput.value.toLowerCase())
+    ) {
+    } else {
+      matchedCard.push(card);
+    }
+  }
+  return matchedCard;
 }
