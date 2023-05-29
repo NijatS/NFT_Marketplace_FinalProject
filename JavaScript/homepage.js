@@ -4,7 +4,10 @@ const categoryDiv = document.querySelector(".categories");
 const discoverDiv = document.querySelector(".discoverCards");
 const infoDiv = document.querySelector(".infoCards");
 const signUpBtn = document.querySelector("#signUp");
+const clock = document.querySelectorAll("#highLightM h3");
+console.log(clock);
 let j = 1;
+setInterval(clockCal, 1000);
 const cardName = ["DSGN Animals", "Magic Mushrooms", "Disco Machines"];
 const cardAvatar = ["MrFox", "Shroomie", "BeKind2Robots"];
 const topAvatar = [
@@ -151,3 +154,34 @@ infoCards.forEach((data) => {
   <p>${data.info}</p></div>`;
   infoDiv.append(div);
 });
+
+function clockCal() {
+  let second = Number(clock[3].textContent);
+  let minute = Number(clock[2].textContent);
+  let hour = Number(clock[1].textContent);
+  second--;
+  if (second == 0) {
+    minute--;
+    second = 59;
+  }
+  if (minute == 0) {
+    hour--;
+    minute = 59;
+  }
+  if (second < 10) {
+    second = "0" + second;
+  }
+  if (minute < 10) {
+    minute = "0" + minute;
+  }
+  if (hour < 10) {
+    hour = "0" + hour;
+  }
+  console.log(second);
+  clock[6].textContent = second;
+  clock[5].textContent = minute;
+  clock[4].textContent = hour;
+  clock[3].textContent = second;
+  clock[2].textContent = minute;
+  clock[1].textContent = hour;
+}
