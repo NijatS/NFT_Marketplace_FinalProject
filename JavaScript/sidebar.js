@@ -33,3 +33,10 @@ function clearToast() {
   if (toastDiv.children.length > 0) toastDiv.children[0].remove();
 }
 setInterval(clearToast, 1500);
+function emailCheck(data) {
+  const reg = new RegExp(
+    "^([a-z0-9]+[-._])*([a-z0-9])+@+([a-z]+[.])*([a-z]){2,8}$"
+  );
+  if (reg.test(data)) return true;
+  return false;
+}

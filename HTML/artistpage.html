@@ -10,6 +10,14 @@
       href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="../Scss/main.css" />
     <title>Document</title>
   </head>
@@ -152,24 +160,26 @@
     <footer>
       <div class="container footer_top">
         <div>
-          <div class="footer_logo">
-            <img src="../Images/svg/mainLogo.svg" alt="Main Logo" />
-            <img src="../Images/svg/NFTmarketplace.svg" alt="NFT text" />
-          </div>
+          <a href="./homepage.html">
+            <div class="footer_logo">
+              <img src="../Images/svg/mainLogo.svg" alt="Main Logo" />
+              <img src="../Images/svg/NFTmarketplace.svg" alt="NFT text" />
+            </div>
+          </a>
           <p>NFT marketplace UI created with Anima for Figma.</p>
           <p>Join our community</p>
           <div class="contact">
-            <img src="../Images/svg/discord.svg" alt="" />
-            <img src="../Images/svg/youtube.svg" alt="" />
-            <img src="../Images/svg/twitter.svg" alt="" />
-            <img src="../Images/svg/instagram.svg" alt="" />
+            <a href="#"><img src="../Images/svg/discord.svg" alt="" /></a>
+            <a href="#"><img src="../Images/svg/youtube.svg" alt="" /></a>
+            <a href="#"><img src="../Images/svg/twitter.svg" alt="" /></a>
+            <a href="#"><img src="../Images/svg/instagram.svg" alt="" /></a>
           </div>
         </div>
         <div>
           <h5>Explore</h5>
           <div>
-            <a href="#"><p>Marketplace</p></a>
-            <a href="#"><p>Rankings</p></a>
+            <a href="./marketplace.html"><p>Marketplace</p></a>
+            <a href="./ranking.html"><p>Rankings</p></a>
             <a href="#"><p>Connect a wallet</p></a>
           </div>
         </div>
@@ -178,7 +188,7 @@
           <p>Get exclusive promotions & updates straight to your inbox.</p>
           <div class="subscribeForm">
             <input type="text" placeholder="Enter your email here" />
-            <button>Subscribe</button>
+            <button class="EmailBtn">Subscribe</button>
           </div>
         </div>
       </div>
@@ -186,6 +196,7 @@
         <p>Ⓒ Created Nijat Soltanov 2023</p>
       </div>
     </footer>
+    <div class="toastDiv"></div>
     <script src="../JavaScript/artistpage.js"></script>
     <script src="../JavaScript/sidebar.js"></script>
   </body>

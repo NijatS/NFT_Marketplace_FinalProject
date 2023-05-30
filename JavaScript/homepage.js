@@ -184,10 +184,3 @@ function clockCal() {
   clock[2].textContent = minute;
   clock[1].textContent = hour;
 }
-function emailCheck(data) {
-  const reg = new RegExp(
-    "^([a-z0-9]+[-._])*([a-z0-9])+@+([a-z]+[.])*([a-z]){2,8}$"
-  );
-  if (reg.test(data)) return true;
-  return false;
-}
