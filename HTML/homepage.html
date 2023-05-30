@@ -10,6 +10,14 @@
       href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="../Scss/main.css" />
     <title>Homepage</title>
   </head>
@@ -259,8 +267,8 @@
           <h3>Join our weekly digest</h3>
           <p>Get exclusive promotions & updates straight to your inbox.</p>
           <div class="subscribeForm">
-            <input type="text" placeholder="Enter your email here" />
-            <button>
+            <input type="email" placeholder="Enter your email here" />
+            <button class="EmailBtn">
               <img src="../Images/svg/mail.svg" alt="Mail" /> Subscribe
             </button>
           </div>
@@ -296,7 +304,7 @@
           <p>Get exclusive promotions & updates straight to your inbox.</p>
           <div class="subscribeForm">
             <input type="text" placeholder="Enter your email here" />
-            <button>Subscribe</button>
+            <button class="EmailBtn">Subscribe</button>
           </div>
         </div>
       </div>
@@ -304,6 +312,18 @@
         <p>Ⓒ Created Nijat Soltanov 2023</p>
       </div>
     </footer>
+    <div class="toastDiv">
+      <div class="toast">
+        <i class="fa fa-check-circle" style="font-size: 30px; color: green"></i>
+        <p class="text">Bacardizzz aferinn mualllim</p>
+        <img src="../Images/svg/close.svg" alt="" />
+      </div>
+      <div class="toast">
+        <i class="material-icons" style="font-size: 30px; color: red">error</i>
+        <p class="text">Muallim email format duz deyil</p>
+        <img src="../Images/svg/close.svg" alt="" />
+      </div>
+    </div>
     <script src="../JavaScript/homepage.js"></script>
     <script src="../JavaScript/sidebar.js"></script>
   </body>

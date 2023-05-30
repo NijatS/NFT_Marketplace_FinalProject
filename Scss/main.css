@@ -237,7 +237,7 @@ nav .nav_menu button {
   align-items: center;
   padding: 20px 30px;
   gap: 12px;
-  background-color: #a259ff;
+  background-color: rgb(162, 89, 255);
   border-radius: 20px;
   font-weight: 600;
   font-size: 16px;
@@ -246,6 +246,7 @@ nav .nav_menu button {
   color: #ffffff;
   transition: 0.3s;
   border: 2px solid transparent;
+  cursor: pointer;
 }
 nav .nav_menu button:hover {
   transform: scale(0.9);
@@ -540,7 +541,7 @@ footer .footer_top > div:last-child .subscribeForm button {
   align-items: center;
   padding: 20px 30px;
   gap: 12px;
-  background-color: #a259ff;
+  background-color: rgb(162, 89, 255);
   border-radius: 20px;
   font-weight: 600;
   font-size: 16px;
@@ -549,6 +550,7 @@ footer .footer_top > div:last-child .subscribeForm button {
   color: #ffffff;
   transition: 0.3s;
   border: 2px solid transparent;
+  cursor: pointer;
   position: absolute;
   right: 0;
   top: 0;
@@ -562,6 +564,10 @@ footer .footer_top > div:last-child .subscribeForm button:hover {
   footer .footer_top > div:last-child .subscribeForm button {
     width: 315px;
   }
+}
+footer .footer_top > div:last-child .subscribeForm button:hover {
+  transform: scale(1);
+  opacity: 0.7;
 }
 @media screen and (max-width: 1050px) {
   footer .footer_top > div:last-child .subscribeForm button {
@@ -781,7 +787,7 @@ body #hero .hero_container .left_side button {
   align-items: center;
   padding: 20px 30px;
   gap: 12px;
-  background-color: #a259ff;
+  background-color: rgb(162, 89, 255);
   border-radius: 20px;
   font-weight: 600;
   font-size: 16px;
@@ -790,6 +796,7 @@ body #hero .hero_container .left_side button {
   color: #ffffff;
   transition: 0.3s;
   border: 2px solid transparent;
+  cursor: pointer;
   width: 224px;
   margin: 30px 0;
 }
@@ -1027,7 +1034,7 @@ body #trending .cards .card .img div {
   gap: 10px;
   width: 100px;
   height: 100px;
-  background: #a259ff;
+  background: rgb(162, 89, 255);
   border-radius: 20px;
   font-family: "Space Mono";
   font-weight: 700;
@@ -1141,7 +1148,8 @@ body #top_creator .header button {
   color: #ffffff;
   transition: 0.3s;
   border: 2px solid transparent;
-  border-color: #a259ff;
+  cursor: pointer;
+  border-color: rgb(162, 89, 255);
   height: 60px;
   padding: 20px 50px !important;
 }
@@ -1317,7 +1325,8 @@ body #top_creator > button {
   color: #ffffff;
   transition: 0.3s;
   border: 2px solid transparent;
-  border-color: #a259ff;
+  cursor: pointer;
+  border-color: rgb(162, 89, 255);
   height: 60px;
   padding: 20px 50px !important;
   display: none;
@@ -1503,7 +1512,8 @@ body #discoverMore .header button {
   color: #ffffff;
   transition: 0.3s;
   border: 2px solid transparent;
-  border-color: #a259ff;
+  cursor: pointer;
+  border-color: rgb(162, 89, 255);
   height: 60px;
   padding: 20px 50px !important;
 }
@@ -1632,7 +1642,8 @@ body #discoverMore > button {
   color: #ffffff;
   transition: 0.3s;
   border: 2px solid transparent;
-  border-color: #a259ff;
+  cursor: pointer;
+  border-color: rgb(162, 89, 255);
   height: 60px;
   padding: 20px 50px !important;
   display: none;
@@ -1798,6 +1809,7 @@ body #highLight #highLightM .text .left button {
   color: #ffffff;
   transition: 0.3s;
   border: 2px solid transparent;
+  cursor: pointer;
   color: #2b2b2b;
   width: 198px;
   height: 60px;
@@ -2110,7 +2122,7 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button {
   align-items: center;
   padding: 20px 30px;
   gap: 12px;
-  background-color: #a259ff;
+  background-color: rgb(162, 89, 255);
   border-radius: 20px;
   font-weight: 600;
   font-size: 16px;
@@ -2119,6 +2131,7 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button {
   color: #ffffff;
   transition: 0.3s;
   border: 2px solid transparent;
+  cursor: pointer;
   position: absolute;
   right: 0;
   top: 0;
@@ -2133,6 +2146,10 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
     width: 315px;
   }
 }
+body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
+  transform: scale(1);
+  opacity: 0.7;
+}
 @media screen and (max-width: 1050px) {
   body #subscribe .subscribe_container .emailInput .subscribeForm button {
     position: initial;
@@ -2140,6 +2157,44 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
     width: 100%;
   }
 }
+body .toastDiv {
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  max-height: 100vh;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  position: fixed;
+  top: 30px;
+  right: 80px;
+  z-index: 1;
+}
+body .toastDiv .toast {
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 320px;
+  background-color: black;
+  position: relative;
+}
+body .toastDiv .toast .text {
+  width: 90%;
+  color: #ffffff;
+}
+body .toastDiv .toast i {
+  font-size: 30px;
+}
+body .toastDiv .toast img {
+  position: absolute;
+  width: 10px;
+  right: 5px;
+}
+
 #create {
   display: flex;
   justify-content: center;
@@ -2265,8 +2320,21 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
   align-items: flex-start;
   gap: 15px;
 }
+@media screen and (max-width: 690px) {
+  #create .create_container > div .bottom .inputs {
+    gap: 10px;
+  }
+}
 #create .create_container > div .bottom .inputs div {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+@media screen and (max-width: 690px) {
+  #create .create_container > div .bottom .inputs div {
+    gap: 2px;
+  }
 }
 #create .create_container > div .bottom .inputs div input {
   padding: 12px 20px 12px 52px;
@@ -2293,9 +2361,25 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
 }
 #create .create_container > div .bottom .inputs div img {
   position: absolute;
-  left: 20px;
-  top: 50%;
+  left: 18px;
+  top: 43%;
   transform: translateY(-50%);
+}
+#create .create_container > div .bottom .inputs div p {
+  padding-left: 10px;
+  height: 6px;
+  color: red;
+}
+@media screen and (max-width: 1050px) {
+  #create .create_container > div .bottom .inputs div p {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 690px) {
+  #create .create_container > div .bottom .inputs div p {
+    height: 3px;
+    font-size: 0.7em;
+  }
 }
 #create .create_container > div .bottom button {
   display: flex;
@@ -2303,7 +2387,7 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
   align-items: center;
   padding: 20px 30px;
   gap: 12px;
-  background-color: #a259ff;
+  background-color: rgb(162, 89, 255);
   border-radius: 20px;
   font-weight: 600;
   font-size: 16px;
@@ -2312,6 +2396,7 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
   color: #ffffff;
   transition: 0.3s;
   border: 2px solid transparent;
+  cursor: pointer;
   width: 100%;
   height: 46px;
 }
@@ -2322,6 +2407,14 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
   #create .create_container > div .bottom button {
     width: 315px;
   }
+}
+#create .create_container > div .bottom button:hover {
+  transform: scale(0.9);
+}
+#create .create_container > div .bottom button:disabled {
+  background-color: #ffffff !important;
+  transform: scale(1) !important;
+  color: black;
 }
 @media screen and (max-width: 1050px) {
   #create .create_container > div .bottom button {
@@ -2440,7 +2533,7 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
   align-items: center;
   padding: 20px 30px;
   gap: 12px;
-  background-color: #a259ff;
+  background-color: rgb(162, 89, 255);
   border-radius: 20px;
   font-weight: 600;
   font-size: 16px;
@@ -2449,6 +2542,7 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
   color: #ffffff;
   transition: 0.3s;
   border: 2px solid transparent;
+  cursor: pointer;
   width: 186px;
   height: 60px;
 }
@@ -2477,7 +2571,8 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
   color: #ffffff;
   transition: 0.3s;
   border: 2px solid transparent;
-  border: 2px solid #a259ff;
+  cursor: pointer;
+  border: 2px solid rgb(162, 89, 255);
 }
 #artistInfo .artisInfo_container .left .buttons button:last-child:hover {
   transform: scale(0.9);
@@ -2609,7 +2704,7 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
   align-items: center;
   padding: 20px 30px;
   gap: 12px;
-  background-color: #a259ff;
+  background-color: rgb(162, 89, 255);
   border-radius: 20px;
   font-weight: 600;
   font-size: 16px;
@@ -2618,6 +2713,7 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
   color: #ffffff;
   transition: 0.3s;
   border: 2px solid transparent;
+  cursor: pointer;
   width: 186px;
   height: 60px;
 }
@@ -2646,7 +2742,8 @@ body #subscribe .subscribe_container .emailInput .subscribeForm button:hover {
   color: #ffffff;
   transition: 0.3s;
   border: 2px solid transparent;
-  border: 2px solid #a259ff;
+  cursor: pointer;
+  border: 2px solid rgb(162, 89, 255);
 }
 #artistInfo .artisInfo_container .right button:last-child:hover {
   transform: scale(0.9);

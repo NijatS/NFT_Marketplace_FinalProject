@@ -92,8 +92,17 @@
           flex-direction: column;
           align-items: flex-start;
           gap: 15px;
+          @media screen and (max-width: 690px) {
+            gap: 10px;
+          }
           div {
             position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            @media screen and (max-width: 690px) {
+              gap: 2px;
+            }
             input {
               padding: 12px 20px 12px 52px;
               background: $white;
@@ -115,9 +124,21 @@
             }
             img {
               position: absolute;
-              left: 20px;
-              top: 50%;
+              left: 18px;
+              top: 43%;
               transform: translateY(-50%);
+            }
+            p {
+              padding-left: 10px;
+              height: 6px;
+              color: red;
+              @media screen and (max-width: 1050px) {
+                font-size: 0.9em;
+              }
+              @media screen and (max-width: 690px) {
+                height: 3px;
+                font-size: 0.7em;
+              }
             }
           }
         }
@@ -125,6 +146,14 @@
           @include buttons($buttonBlue);
           width: 100%;
           height: 46px;
+          &:hover {
+            transform: scale(0.9);
+          }
+          &:disabled {
+            background-color: $white !important;
+            transform: scale(1) !important;
+            color: black;
+          }
           @media screen and (max-width: 1050px) {
             width: 325px;
           }

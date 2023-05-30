@@ -5,8 +5,8 @@ const discoverDiv = document.querySelector(".discoverCards");
 const infoDiv = document.querySelector(".infoCards");
 const signUpBtn = document.querySelector("#signUp");
 const clock = document.querySelectorAll("#highLightM h3");
-console.log(clock);
 let j = 1;
+
 setInterval(clockCal, 1000);
 const cardName = ["DSGN Animals", "Magic Mushrooms", "Disco Machines"];
 const cardAvatar = ["MrFox", "Shroomie", "BeKind2Robots"];
@@ -177,11 +177,17 @@ function clockCal() {
   if (hour < 10) {
     hour = "0" + hour;
   }
-  console.log(second);
   clock[6].textContent = second;
   clock[5].textContent = minute;
   clock[4].textContent = hour;
   clock[3].textContent = second;
   clock[2].textContent = minute;
   clock[1].textContent = hour;
+}
+function emailCheck(data) {
+  const reg = new RegExp(
+    "^([a-z0-9]+[-._])*([a-z0-9])+@+([a-z]+[.])*([a-z]){2,8}$"
+  );
+  if (reg.test(data)) return true;
+  return false;
 }
