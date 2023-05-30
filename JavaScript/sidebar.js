@@ -3,6 +3,7 @@ const burgerIcon = document.querySelector("#burgerIcon");
 const closeBtn = document.querySelector(".sideBar>img");
 const toastDiv = document.querySelector(".toastDiv");
 const emailBtns = document.querySelectorAll(".EmailBtn");
+const screen = window.matchMedia("(max-width: 650px)");
 burgerIcon.addEventListener("click", () => {
   sideBar.style.right = "0px";
 });
@@ -20,11 +21,19 @@ emailBtns.forEach((button) => {
       <i class="material-icons" style="color: red">error</i>
       <p class="text">Muallim email format duz deyil</p>
       <img src="../Images/svg/close.svg" alt="" />`;
+      // if (screen.matches) {
+      //   div.querySelector("p").textContent = "Good";
+      // }
     } else {
       div.innerHTML = `
       <i class="fa fa-check-circle" style="color: green"></i>
-      <p class="text">Bacardizzz aferinn mualllim</p>`;
+      <p class="text">Bacardizzz aferinn mualllim</p>
+      <img src="../Images/svg/close.svg" alt="" />`;
     }
+    const closeBtn = div.querySelector("img");
+    closeBtn.addEventListener("click", () => {
+      div.remove();
+    });
     toastDiv.append(div);
     input.value = "";
   });
