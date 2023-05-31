@@ -21,9 +21,6 @@ emailBtns.forEach((button) => {
       <i class="material-icons" style="color: red">error</i>
       <p class="text">Muallim email format duz deyil</p>
       <img src="../Images/svg/close.svg" alt="" />`;
-      // if (screen.matches) {
-      //   div.querySelector("p").textContent = "Good";
-      // }
     } else {
       div.innerHTML = `
       <i class="fa fa-check-circle" style="color: green"></i>
@@ -41,7 +38,7 @@ emailBtns.forEach((button) => {
 function clearToast() {
   if (toastDiv.children.length > 0) toastDiv.children[0].remove();
 }
-setInterval(clearToast, 1500);
+if (toastDiv.children.length != 0) setInterval(clearToast, 1500);
 function emailCheck(data) {
   const reg = new RegExp(
     "^([a-z0-9]+[-._])*([a-z0-9])+@+([a-z]+[.])*([a-z]){2,8}$"

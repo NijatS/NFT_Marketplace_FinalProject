@@ -5,9 +5,29 @@ const discoverDiv = document.querySelector(".discoverCards");
 const infoDiv = document.querySelector(".infoCards");
 const signUpBtn = document.querySelector("#signUp");
 const clock = document.querySelectorAll("#highLightM h3");
+const rightSide = document.querySelector(".right_side");
+const mobile3D = document.querySelector(".mobile_hero");
 let j = 1;
 
+setTimeout(start3D, 0);
+setInterval(animation3D, 4000);
 setInterval(clockCal, 1000);
+function animation3D() {
+  if (
+    rightSide.className == "right_side" ||
+    mobile3D.className == "mobile_hero"
+  ) {
+    rightSide.className += " rotate";
+    mobile3D.className += " rotate";
+  } else {
+    rightSide.className = "right_side";
+    mobile3D.className = "mobile_hero";
+  }
+}
+function start3D() {
+  rightSide.style.transform = "perspective(800px) rotateY(-25deg)";
+  mobile3D.style.transform = "perspective(800px) rotateY(-25deg)";
+}
 const cardName = ["DSGN Animals", "Magic Mushrooms", "Disco Machines"];
 const cardAvatar = ["MrFox", "Shroomie", "BeKind2Robots"];
 const topAvatar = [
@@ -73,6 +93,7 @@ const infoCards = [
 ];
 const mediaTablet = window.matchMedia("(max-width: 1050px)");
 const mediaPhone = window.matchMedia("(max-width: 690px)");
+
 cards.forEach((card) => {
   const imgDiv = card.querySelector(".img");
   const infoHead = card.querySelector(".info ");
