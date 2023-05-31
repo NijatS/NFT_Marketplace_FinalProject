@@ -256,6 +256,10 @@ nav .nav_menu button:hover {
     width: 315px;
   }
 }
+nav .nav_menu button:hover {
+  transform: scale(1);
+  box-shadow: 0px 0px 0px 2.5px white inset, 0px 0px 0px 5px #a259ff;
+}
 nav .nav_menu #burgerIcon {
   display: none;
   cursor: pointer;
@@ -998,6 +1002,7 @@ body #trending .cards .card {
   gap: 15px;
   width: 330px;
   height: 525px;
+  cursor: pointer;
 }
 @media screen and (max-width: 690px) {
   body #trending .cards .card:nth-child(2) {
@@ -1200,6 +1205,10 @@ body #top_creator .avatars a .avatar {
   background: #3b3b3b;
   border-radius: 20px;
   position: relative;
+  transition: 0.4s;
+}
+body #top_creator .avatars a .avatar:hover {
+  transform: perspective(800px) rotateY(10deg);
 }
 @media screen and (max-width: 1050px) {
   body #top_creator .avatars a .avatar {
@@ -1398,10 +1407,17 @@ body #browse .categories .category {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  cursor: pointer;
   width: 240px;
   height: 316px;
   background: #3b3b3b;
   border-radius: 20px;
+  transition-duration: 0.3s;
+}
+body #browse .categories .category:hover {
+  text-shadow: 0px 0px 6px rgb(255, 255, 255);
+  box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
 }
 @media screen and (max-width: 1050px) {
   body #browse .categories .category {
@@ -1557,6 +1573,7 @@ body #discoverMore .discoverCards .discoverCard {
   height: 469px;
   background: #3b3b3b;
   border-radius: 20px;
+  cursor: pointer;
 }
 @media screen and (max-width: 690px) {
   body #discoverMore .discoverCards .discoverCard {
@@ -1936,6 +1953,7 @@ body #howItWorks .infoCards {
 }
 body #howItWorks .infoCards .infoCard {
   display: flex;
+  cursor: pointer;
   flex-direction: column;
   align-items: center;
   padding: 10px 30px 30px;
