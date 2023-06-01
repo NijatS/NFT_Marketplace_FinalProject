@@ -4425,6 +4425,11 @@ footer {
   gap: 16px;
   height: 60px;
   width: 262.5px;
+  background-color: transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 2px solid #2b2b2b;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1050px) {
@@ -4551,6 +4556,7 @@ footer {
   color: #ffffff;
   font-family: "Space Mono";
   color: #cccccc;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 690px) {

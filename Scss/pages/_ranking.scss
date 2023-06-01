@@ -59,6 +59,10 @@
       gap: 16px;
       height: 60px;
       width: 262.5px;
+      background-color: transparent;
+      transition: 0.3s;
+      border: 2px solid $mainBackgroundColor;
+      cursor: pointer;
       @media screen and (max-width: 1050px) {
         width: 170px;
       }
@@ -125,6 +129,7 @@
           @include baseBody();
           font-family: "Space Mono";
           color: $grayText;
+          cursor: pointer;
           @media screen and (max-width: 690px) {
             @include CaptionSpace();
           }
