@@ -136,7 +136,9 @@ sectionDiv.forEach((div) => {
   div.addEventListener("click", () => {
     refreshDiv();
     div.style.borderBottomColor = "rgb(133, 133, 132)";
-    div.querySelector("h5").style.color = "rgb(255,255,255)";
+    div.querySelectorAll("h5").forEach((header) => {
+      header.style.color = "rgb(255,255,255)";
+    });
   });
 });
 getAllCards();
@@ -172,7 +174,9 @@ function clear() {
 function refreshDiv() {
   sectionDiv.forEach((div) => {
     div.style.borderBottomColor = " rgb(43, 43, 43)";
-    div.querySelector("h5").style.color = "rgb(133, 133, 132)";
+    div.querySelectorAll("h5").forEach((header) => {
+      header.style.color = "rgb(133, 133, 132)";
+    });
   });
 }
 headNumber.addEventListener("click", () => {
