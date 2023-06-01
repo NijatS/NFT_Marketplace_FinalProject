@@ -35,11 +35,6 @@ emailBtns.forEach((button) => {
     input.value = "";
   });
 });
-function clearToast() {
-  if (toastDiv.children.length > 0) toastDiv.children[0].remove();
-}
-// if (toastDiv.children.length != 0) setInterval(clearToast, 1500);
-
 setInterval(clearToast, 1500);
 function emailCheck(data) {
   const reg = new RegExp(
@@ -47,4 +42,7 @@ function emailCheck(data) {
   );
   if (reg.test(data)) return true;
   return false;
+}
+function clearToast() {
+  if (toastDiv.children.length > 0) toastDiv.children[0].remove();
 }
