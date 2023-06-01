@@ -1,5 +1,5 @@
 const divs = document.querySelectorAll(".browseFrame_container >div");
-const cards = [
+let cards = [
   {
     img: "../Images/Trendings/2.1.png",
     head: "Magic Mushroom 0325",
@@ -92,26 +92,29 @@ const nftCards = document.querySelector(".nftCards_container").children;
 divs[0].style.borderBottomColor = "rgb(133, 133, 132)";
 divs[0].querySelector("h5").style.color = "rgb(255,255,255)";
 divs[0].querySelector("p").style.backgroundColor = "rgb(133, 133, 132)";
-let amountLike = 0;
+cards = JSON.parse(localStorage.getItem("allCards")) || cards;
 let likedCard = [];
+let amountLike = 0;
+cards.forEach((card) => {
+  if (card.select == true) {
+    amountLike++;
+    likedCard.push(card);
+  }
+});
+likeP.textContent = amountLike;
 mainCards();
 divs.forEach((div) => {
   div.addEventListener("click", () => {
+    nftCardsBrowseContainer.innerHTML = "";
     if (div == divs[1]) {
-      nftCardsBrowseContainer.innerHTML = "";
       likedCards();
     } else {
-      nftCardsBrowseContainer.innerHTML = "";
       mainCards();
     }
     refreshDiv();
-    style = getComputedStyle(div);
-    color = style.borderColor;
-    if (color == "rgb(43, 43, 43)") {
-      div.style.borderBottomColor = "rgb(133, 133, 132)";
-      div.querySelector("h5").style.color = "rgb(255,255,255)";
-      div.querySelector("p").style.backgroundColor = "rgb(133, 133, 132)";
-    }
+    div.style.borderBottomColor = "rgb(133, 133, 132)";
+    div.querySelector("h5").style.color = "rgb(255,255,255)";
+    div.querySelector("p").style.backgroundColor = "rgb(133, 133, 132)";
   });
 });
 searchInput.addEventListener("keyup", () => {
@@ -157,8 +160,8 @@ function mainCards() {
     likeBtn.addEventListener("click", () => {
       if (likeBtn.style.color == "black") {
         likeBtn.style.color = "red";
-        amountLike++;
         card.select = true;
+        amountLike++;
         likedCard.push(card);
       } else if (likeBtn.style.color == "red") {
         likeBtn.style.color = "black";
@@ -169,6 +172,9 @@ function mainCards() {
           likedCard.splice(index, 1);
         }
       }
+      console.log("qaqa bacardin");
+      localStorage.setItem("allCards", JSON.stringify(cards));
+
       likeP.textContent = amountLike;
     });
     nftCardsBrowseContainer.append(div);
@@ -221,6 +227,9 @@ function likedCards() {
           likedCard.splice(index, 1);
         }
       }
+      // localStorage.setItem("allCards", JSON.stringify(cards));
+      console.log("geldi abi");
+      localStorage.setItem("allCards", JSON.stringify(cards));
       likeP.textContent = amountLike;
     });
     nftCardsBrowseContainer.append(div);

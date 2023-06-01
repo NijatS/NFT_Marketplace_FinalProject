@@ -38,7 +38,9 @@ emailBtns.forEach((button) => {
 function clearToast() {
   if (toastDiv.children.length > 0) toastDiv.children[0].remove();
 }
-if (toastDiv.children.length != 0) setInterval(clearToast, 1500);
+// if (toastDiv.children.length != 0) setInterval(clearToast, 1500);
+
+setInterval(clearToast, 1500);
 function emailCheck(data) {
   const reg = new RegExp(
     "^([a-z0-9]+[-._])*([a-z0-9])+@+([a-z]+[.])*([a-z]){2,8}$"
