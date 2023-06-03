@@ -9,7 +9,6 @@ console.log(inputp);
 inputs.forEach((input) => {
   input.addEventListener("keyup", () => {
     inputPCleaner();
-    console.log(inputs[3].value);
     if (inputCheck()) {
       createBtn.disabled = false;
     } else {
@@ -18,14 +17,14 @@ inputs.forEach((input) => {
     if (!emailCheck(inputs[1].value)) {
       inputp[1].textContent = "Email must be @";
     }
-    if (passwordCheck(inputs[2].value) == "length") {
-      inputp[2].textContent = "Password must be more than 8";
-    } else if (passwordCheck(inputs[2].value) == "space") {
-      inputp[2].textContent = "Password mustn`t contain space";
-    } else if (passwordCheck(inputs[2].value) == "upper") {
+    if (passwordCheck(inputs[2].value) == "upper") {
       inputp[2].textContent = "A minimum of 1 upper case";
     } else if (passwordCheck(inputs[2].value) == "lower") {
       inputp[2].textContent = "A minimum of 1 lower case";
+    } else if (passwordCheck(inputs[2].value) == "length") {
+      inputp[2].textContent = "Password must be more than 8";
+    } else if (passwordCheck(inputs[2].value) == "space") {
+      inputp[2].textContent = "Password mustn`t contain space";
     } else if (passwordCheck(inputs[2].value) == "number") {
       inputp[2].textContent = "A minimum of 1 number case";
     }
@@ -48,6 +47,9 @@ createBtn.addEventListener("click", () => {
       "Mualllim bacardin:) 100 balda yazarsiz yeqin!",
       "success"
     );
+    inputs.forEach((input) => {
+      input.value = "";
+    });
     return;
   }
   display("Aaaa!", "Mualllim melumatlari duz gir basna donum!", "error");
@@ -79,10 +81,10 @@ function passwordCheck(data) {
   const reg1 = new RegExp("[A-Z]");
   const reg2 = new RegExp("[a-z]");
   const reg3 = new RegExp("[0-9]");
-  if (String(data).length < 8) return "length";
-  if (String(data).includes(" ")) return "space";
   if (!reg1.test(data)) return "upper";
   if (!reg2.test(data)) return "lower";
   if (!reg3.test(data)) return "number";
+  if (String(data).length < 8) return "length";
+  if (String(data).includes(" ")) return "space";
   return "success";
 }
