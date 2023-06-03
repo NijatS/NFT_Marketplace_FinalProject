@@ -151,11 +151,12 @@
       }
       i {
         position: absolute;
-        font-size: 24px;
-        top: 10px;
+        font-size: 28px;
+        top: 15px;
         right: 10px;
         transition: 0.3s;
         color: black;
+        cursor: pointer;
       }
       .text {
         display: flex;

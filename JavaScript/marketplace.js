@@ -222,13 +222,12 @@ function likedCards() {
         likeBtn.style.color = "black";
         amountLike--;
         card.select = false;
+        div.style.display = "none";
         const index = likedCard.indexOf(card);
         if (index > -1) {
           likedCard.splice(index, 1);
         }
       }
-      // localStorage.setItem("allCards", JSON.stringify(cards));
-      console.log("geldi abi");
       localStorage.setItem("allCards", JSON.stringify(cards));
       likeP.textContent = amountLike;
     });
