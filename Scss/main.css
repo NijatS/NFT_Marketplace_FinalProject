@@ -629,6 +629,9 @@ footer .footer_bottom p {
 body {
   background-color: #2b2b2b;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 body .container {
   width: 1050px;
   transition: 0.3s;
