@@ -454,8 +454,12 @@ body {
       button {
         @include buttons($mainBackgroundColor);
         border-color: $buttonBlue;
+        width: 247px;
         height: 60px;
-        padding: 20px 50px !important;
+        p {
+          width: 115px;
+        }
+        box-sizing: border-box;
         @media screen and (max-width: 690px) {
           display: none;
         }
@@ -866,6 +870,8 @@ body {
       height: 630px;
       background-image: url("../../Images/NFTHighlightMobil.jpg");
       background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
 
       @media screen and (max-width: 1050px) {
         display: flex;

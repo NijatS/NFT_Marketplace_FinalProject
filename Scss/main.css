@@ -236,6 +236,9 @@ nav .nav_menu a {
 nav .nav_menu a:hover {
   transform: scale(0.9);
 }
+nav .nav_menu a:nth-child(4) {
+  padding: 0;
+}
 nav .nav_menu button {
   display: flex;
   justify-content: center;
@@ -1183,8 +1186,9 @@ body #top_creator .header button {
   border: 2px solid transparent;
   cursor: pointer;
   border-color: #a259ff;
+  width: 247px;
   height: 60px;
-  padding: 20px 50px !important;
+  box-sizing: border-box;
 }
 body #top_creator .header button:hover {
   transform: scale(0.9);
@@ -1193,6 +1197,9 @@ body #top_creator .header button:hover {
   body #top_creator .header button {
     width: 315px;
   }
+}
+body #top_creator .header button p {
+  width: 115px;
 }
 @media screen and (max-width: 690px) {
   body #top_creator .header button {
@@ -1729,6 +1736,8 @@ body #highLight #highLightM {
   height: 630px;
   background-image: url("../../Images/NFTHighlightMobil.jpg");
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media screen and (max-width: 1050px) {
   body #highLight #highLightM {
@@ -2306,6 +2315,7 @@ body .toastDiv .toast img {
 @media screen and (max-width: 690px) {
   #create .create_container {
     flex-direction: column;
+    gap: 0;
   }
 }
 #create .create_container > img {
@@ -2356,7 +2366,7 @@ body .toastDiv .toast img {
   flex-direction: column;
   align-items: flex-start;
   width: 460px;
-  gap: 40px;
+  gap: 20px;
 }
 @media screen and (max-width: 1050px) {
   #create .create_container > div .top {
@@ -2515,6 +2525,9 @@ body .toastDiv .toast img {
 @media screen and (max-width: 690px) {
   #create .create_container > div .bottom button {
     width: 315px;
+  }
+  #create .create_container > div .bottom button:hover {
+    transform: scale(1);
   }
 }
 
@@ -3282,6 +3295,7 @@ footer {
   gap: 10px;
   background-color: #3b3b3b;
   border-radius: 20px;
+  cursor: pointer;
 }
 #rankings .item > div {
   display: flex;

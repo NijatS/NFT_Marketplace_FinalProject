@@ -13,6 +13,7 @@
     }
     @media screen and (max-width: 690px) {
       flex-direction: column;
+      gap: 0;
     }
     & > img {
       width: calc(50% - 30px);
@@ -51,7 +52,7 @@
         flex-direction: column;
         align-items: flex-start;
         width: 460px;
-        gap: 40px;
+        gap: 20px;
         @media screen and (max-width: 1050px) {
           width: 325px;
         }
@@ -70,8 +71,6 @@
             font-weight: 600;
             font-size: 38px;
             line-height: 120%;
-          }
-          @media screen and (max-width: 690px) {
           }
         }
       }
@@ -159,6 +158,9 @@
           }
           @media screen and (max-width: 690px) {
             width: 315px;
+            &:hover {
+              transform: scale(1);
+            }
           }
         }
       }

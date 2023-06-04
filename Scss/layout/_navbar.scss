@@ -52,6 +52,9 @@ nav {
       &:hover {
         transform: scale(0.9);
       }
+      &:nth-child(4) {
+        padding: 0;
+      }
     }
     button {
       @include buttons($buttonBlue);
