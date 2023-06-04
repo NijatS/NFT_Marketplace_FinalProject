@@ -5,7 +5,6 @@ const createBtn = document.querySelector("#createBtn");
 if (!inputCheck()) {
   createBtn.disabled = true;
 }
-console.log(inputp);
 inputs.forEach((input) => {
   input.addEventListener("keyup", () => {
     inputPCleaner();
